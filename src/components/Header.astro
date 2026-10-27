@@ -1,0 +1,18 @@
+---
+import { catSVG } from '../scripts/cats.js';
+import IslandButton from './IslandButton.astro';
+---
+<header class="top" id="top">
+    <a class="logo" href="#main" aria-label="cocofhu 首页" data-i18n-attr="aria-label:logoAria">
+      <span class="logo-cat" data-cat="yume" data-mini><Fragment set:html={catSVG('yume', true)} /></span>
+      <span class="logo-txt">cocofhu<b>.</b></span>
+    </a>
+    <nav class="nav" aria-label="页面导航" data-i18n-attr="aria-label:navAria">
+      <a class="nav-a nav-section" href="/blog/">Blog</a>
+      <a class="nav-a nav-section" href="/portfolio/">作品集</a>
+      <a class="nav-a" href="#recent" data-jump data-i18n="navRecent">最近在做</a>
+      <a class="nav-a" href="#about" data-jump data-i18n="navAbout">关于我</a>
+      <IslandButton  className="lang" id="langBtn" aria-label="切换语言 / Switch language"><span data-l="zh" lang="zh-CN">中</span><i aria-hidden="true">/</i><span data-l="en" lang="en">EN</span></IslandButton>
+      <a class="pill pill--ink" href="https://github.com/cocofhu" target="_blank" rel="noopener">GitHub <svg class="ext" viewBox="0 0 16 16" aria-hidden="true"><path d="M6 3h7v7M13 3L4 12"/></svg></a>
+    </nav>
+  </header>

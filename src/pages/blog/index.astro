@@ -1,0 +1,14 @@
+---
+import BlogLayout from '../../layouts/BlogLayout.astro';
+import BlogArchive from '../../components/BlogArchive.astro';
+import { publishedPosts } from '../../lib/blog';
+import { catSVG } from '../../scripts/cats.js';
+const posts = await publishedPosts();
+---
+<BlogLayout title="写点什么。" description="关于设计、代码，以及做东西时留下的小小记录。">
+  <section class="blog-intro">
+    <div><h1>写点<span>什么。</span></h1><p>关于设计、代码，还有路上捡到的想法。</p></div>
+    <div class="blog-doodle" aria-hidden="true"><span class="doodle-note">慢慢写<br />也没关系</span><span set:html={catSVG('nemu', false)} /></div>
+  </section>
+  <BlogArchive posts={posts} allPosts={posts} />
+</BlogLayout>

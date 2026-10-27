@@ -1,0 +1,9 @@
+---
+import { tagHref } from '../lib/tags';
+interface Props { section: 'blog' | 'portfolio'; tags: { tag: string; count: number }[]; active?: string; }
+const { section, tags, active } = Astro.props;
+---
+<nav class="tag-navigation" aria-label={section === 'blog' ? '博客标签分类' : '作品标签分类'}>
+  <a class="tag-filter" href={`/${section}/`} aria-current={!active ? 'page' : undefined}>全部</a>
+  {tags.map(({ tag, count }) => <a class="tag-filter" href={tagHref(section, tag)} aria-current={active === tag ? 'page' : undefined}>{tag}<span>{count}</span></a>)}
+</nav>

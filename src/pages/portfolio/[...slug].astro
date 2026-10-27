@@ -1,0 +1,20 @@
+---
+import { render } from 'astro:content';
+import BlogLayout from '../../layouts/BlogLayout.astro';
+import { publishedProjects } from '../../lib/portfolio';
+import { entryTags, tagHref } from '../../lib/tags';
+import { dateLabel } from '../../lib/blog';
+export async function getStaticPaths() { return (await publishedProjects()).map(project => ({ params: { slug: project.id }, props: { project } })); }
+const { project } = Astro.props;
+const { Content } = await render(project);
+const liveUrl = /^(?:\/(?!\/)|https:\/\/)/.test(project.data.liveUrl) ? project.data.liveUrl : '';
+---
+<BlogLayout title={project.data.title} description={project.data.excerpt} image={project.data.cover} section="portfolio">
+  <div class="article-top"><a href="/portfolio/">全部作品</a><time datetime={project.data.publishedAt.toISOString().slice(0, 10)}>{dateLabel(project.data.publishedAt)}</time></div>
+  <article class="article-sheet project-sheet">
+    <header class="article-heading"><h1>{project.data.title}</h1><p>{project.data.excerpt}</p><ul class="post-tags" aria-label="作品标签">{entryTags(project).map(tag => <li><a href={tagHref('portfolio', tag)}>{tag}</a></li>)}</ul></header>
+    {project.data.cover && <figure class="article-cover"><img src={project.data.cover} alt={project.data.coverAlt} width="1440" height="900" /></figure>}
+    <div class="article-prose"><Content /></div>
+    {liveUrl && <a class="work-live" href={liveUrl}>打开作品</a>}
+  </article>
+</BlogLayout>

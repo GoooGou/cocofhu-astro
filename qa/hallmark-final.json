@@ -1,0 +1,2059 @@
+{
+  "summary": {
+    "fails": 33,
+    "reflex": 12,
+    "warns": 16,
+    "waived": 0,
+    "rejected": 17,
+    "answered": 0,
+    "dismissed": 1,
+    "notes": 148,
+    "files": 25,
+    "render": "ran"
+  },
+  "findings": [
+    {
+      "gate": "2a",
+      "grade": "FAIL",
+      "tier": "floor",
+      "file": "src\\styles\\reference.css",
+      "line": 407,
+      "evidence": "purple-to-pink gradient on .cc-backdrop",
+      "fix": "One anchor hue; drop the gradient"
+    },
+    {
+      "gate": "34",
+      "grade": "FAIL",
+      "tier": "floor",
+      "file": "src\\layouts\\BlogLayout.astro",
+      "line": 1,
+      "evidence": "no overflow-x: clip on html and body",
+      "fix": "overflow-x: clip on both html and body"
+    },
+    {
+      "gate": "34",
+      "grade": "FAIL",
+      "tier": "floor",
+      "file": "src\\pages\\index.astro",
+      "line": 1,
+      "evidence": "no overflow-x: clip on html and body",
+      "fix": "overflow-x: clip on both html and body"
+    },
+    {
+      "gate": "50",
+      "grade": "FAIL",
+      "tier": "floor",
+      "file": "src\\pages\\portfolio\\[...slug].astro",
+      "line": 15,
+      "evidence": "display header word \"{project.data.title}\" with no overflow-wrap",
+      "fix": "Add overflow-wrap: break-word and min-width: 0"
+    },
+    {
+      "gate": "54",
+      "grade": "FAIL",
+      "tier": "floor",
+      "file": "src\\components\\About.astro",
+      "line": 7,
+      "evidence": "eyebrow \"✦ ABOUT\" before <h2>",
+      "fix": "Cut it; the heading already says this (craft.md § 7 has twelve other openings)"
+    },
+    {
+      "gate": "54",
+      "grade": "FAIL",
+      "tier": "floor",
+      "file": "src\\components\\Hero.astro",
+      "line": 9,
+      "evidence": "eyebrow \"✦ HELLO · 闪耀扣扣的主页\" before <h1>",
+      "fix": "Cut it; the heading already says this (craft.md § 7 has twelve other openings)"
+    },
+    {
+      "gate": "54",
+      "grade": "FAIL",
+      "tier": "floor",
+      "file": "src\\components\\Recent.astro",
+      "line": 8,
+      "evidence": "eyebrow \"✦ RECENT\" before <h2>",
+      "fix": "Cut it; the heading already says this (craft.md § 7 has twelve other openings)"
+    },
+    {
+      "gate": "62",
+      "grade": "FAIL",
+      "tier": "floor",
+      "file": "src\\styles\\reference.css",
+      "line": 248,
+      "evidence": ".bubble is hidden at rest (opacity: 0) and depends on a script to appear",
+      "fix": "Visible by default: scope the hidden state under a .js class the script adds, or animate from visible with @starting-style"
+    },
+    {
+      "gate": "62",
+      "grade": "FAIL",
+      "tier": "floor",
+      "file": "src\\styles\\reference.css",
+      "line": 394,
+      "evidence": ".thief-card is hidden at rest (opacity: 0) and depends on a script to appear",
+      "fix": "Visible by default: scope the hidden state under a .js class the script adds, or animate from visible with @starting-style"
+    },
+    {
+      "gate": "62",
+      "grade": "FAIL",
+      "tier": "floor",
+      "file": "src\\styles\\reference.css",
+      "line": 671,
+      "evidence": ".buddy-say is hidden at rest (opacity: 0) and depends on a script to appear",
+      "fix": "Visible by default: scope the hidden state under a .js class the script adds, or animate from visible with @starting-style"
+    },
+    {
+      "gate": "63",
+      "grade": "FAIL",
+      "tier": "floor",
+      "file": "src\\components\\Footer.astro",
+      "line": 11,
+      "evidence": "middle-dot meta string \"© 2026 cocofhu · 分布式系统 · 存储 · 基础设施\"",
+      "fix": "Line breaks, columns or hairlines; one dot in a byline at most"
+    },
+    {
+      "gate": "63",
+      "grade": "FAIL",
+      "tier": "floor",
+      "file": "src\\components\\Tapes.astro",
+      "line": 9,
+      "evidence": "arrow glued to the label \"预告函 怪盗已光临 — 怪盗猫 点开看看 →\" (<IslandButton>)",
+      "fix": "A verb as the label; the link already says it goes somewhere"
+    },
+    {
+      "gate": "67",
+      "grade": "FAIL",
+      "tier": "floor",
+      "file": "src\\styles\\polish.css",
+      "line": 14,
+      "evidence": ".stage-hint: letter-spaced tracked 0.2em at 12px in a label role",
+      "fix": "Labels, captions, table heads, nav links and meta are the body face (or the theme's label face), a step smaller, sentence case, untracked"
+    },
+    {
+      "gate": "67",
+      "grade": "FAIL",
+      "tier": "floor",
+      "file": "src\\styles\\polish.css",
+      "line": 15,
+      "evidence": ".chip: letter-spaced tracked 0.12em at 12px in a label role",
+      "fix": "Labels, captions, table heads, nav links and meta are the body face (or the theme's label face), a step smaller, sentence case, untracked"
+    },
+    {
+      "gate": "67",
+      "grade": "FAIL",
+      "tier": "floor",
+      "file": "src\\styles\\polish.css",
+      "line": 17,
+      "evidence": ".kicker-pill: letter-spaced tracked 0.25em at 13px in a label role",
+      "fix": "Labels, captions, table heads, nav links and meta are the body face (or the theme's label face), a step smaller, sentence case, untracked"
+    },
+    {
+      "gate": "67",
+      "grade": "FAIL",
+      "tier": "floor",
+      "file": "src\\styles\\polish.css",
+      "line": 18,
+      "evidence": ".kq-by: letter-spaced tracked 0.06em at 14px in a label role",
+      "fix": "Labels, captions, table heads, nav links and meta are the body face (or the theme's label face), a step smaller, sentence case, untracked"
+    },
+    {
+      "gate": "67",
+      "grade": "FAIL",
+      "tier": "floor",
+      "file": "src\\styles\\reference.css",
+      "line": 131,
+      "evidence": ".intro-load: letter-spaced tracked 0.3em at 12px in a label role",
+      "fix": "Labels, captions, table heads, nav links and meta are the body face (or the theme's label face), a step smaller, sentence case, untracked"
+    },
+    {
+      "gate": "67",
+      "grade": "FAIL",
+      "tier": "floor",
+      "file": "src\\styles\\reference.css",
+      "line": 211,
+      "evidence": ".kicker: letter-spaced tracked 0.12em at 13px in a label role",
+      "fix": "Labels, captions, table heads, nav links and meta are the body face (or the theme's label face), a step smaller, sentence case, untracked"
+    },
+    {
+      "gate": "67",
+      "grade": "FAIL",
+      "tier": "floor",
+      "file": "src\\styles\\reference.css",
+      "line": 232,
+      "evidence": "html:not([data-lang=\"en\"]) .chip: letter-spaced tracked 0.06em in a label role",
+      "fix": "Labels, captions, table heads, nav links and meta are the body face (or the theme's label face), a step smaller, sentence case, untracked"
+    },
+    {
+      "gate": "67",
+      "grade": "FAIL",
+      "tier": "floor",
+      "file": "src\\styles\\reference.css",
+      "line": 233,
+      "evidence": "html:not([data-lang=\"en\"]) .foot-bar .foot-small: letter-spaced tracked 0.08em in a label role",
+      "fix": "Labels, captions, table heads, nav links and meta are the body face (or the theme's label face), a step smaller, sentence case, untracked"
+    },
+    {
+      "gate": "67",
+      "grade": "FAIL",
+      "tier": "floor",
+      "file": "src\\styles\\reference.css",
+      "line": 261,
+      "evidence": ".live: letter-spaced tracked 0.06em at 13px in a label role",
+      "fix": "Labels, captions, table heads, nav links and meta are the body face (or the theme's label face), a step smaller, sentence case, untracked"
+    },
+    {
+      "gate": "67",
+      "grade": "FAIL",
+      "tier": "floor",
+      "file": "src\\styles\\reference.css",
+      "line": 265,
+      "evidence": ".est: letter-spaced tracked 0.14em at 12px in a label role",
+      "fix": "Labels, captions, table heads, nav links and meta are the body face (or the theme's label face), a step smaller, sentence case, untracked"
+    },
+    {
+      "gate": "67",
+      "grade": "FAIL",
+      "tier": "floor",
+      "file": "src\\styles\\reference.css",
+      "line": 396,
+      "evidence": ".thief-card small: letter-spaced tracked 0.3em at 10px in a label role",
+      "fix": "Labels, captions, table heads, nav links and meta are the body face (or the theme's label face), a step smaller, sentence case, untracked"
+    },
+    {
+      "gate": "67",
+      "grade": "FAIL",
+      "tier": "floor",
+      "file": "src\\styles\\reference.css",
+      "line": 398,
+      "evidence": ".thief-card em: letter-spaced tracked 0.08em at 11px in a label role",
+      "fix": "Labels, captions, table heads, nav links and meta are the body face (or the theme's label face), a step smaller, sentence case, untracked"
+    },
+    {
+      "gate": "67",
+      "grade": "FAIL",
+      "tier": "floor",
+      "file": "src\\styles\\reference.css",
+      "line": 400,
+      "evidence": ".thief-hint: letter-spaced tracked 0.06em at 11px in a label role",
+      "fix": "Labels, captions, table heads, nav links and meta are the body face (or the theme's label face), a step smaller, sentence case, untracked"
+    },
+    {
+      "gate": "67",
+      "grade": "FAIL",
+      "tier": "floor",
+      "file": "src\\styles\\reference.css",
+      "line": 456,
+      "evidence": ".scroll-hint: letter-spaced tracked 0.35em at 12px in a label role",
+      "fix": "Labels, captions, table heads, nav links and meta are the body face (or the theme's label face), a step smaller, sentence case, untracked"
+    },
+    {
+      "gate": "67",
+      "grade": "FAIL",
+      "tier": "floor",
+      "file": "src\\styles\\reference.css",
+      "line": 490,
+      "evidence": ".count: letter-spaced tracked 0.2em at 13px in a label role",
+      "fix": "Labels, captions, table heads, nav links and meta are the body face (or the theme's label face), a step smaller, sentence case, untracked"
+    },
+    {
+      "gate": "67",
+      "grade": "FAIL",
+      "tier": "floor",
+      "file": "src\\styles\\reference.css",
+      "line": 518,
+      "evidence": ".card-meta time: letter-spaced tracked 0.14em at 12px in a label role",
+      "fix": "Labels, captions, table heads, nav links and meta are the body face (or the theme's label face), a step smaller, sentence case, untracked"
+    },
+    {
+      "gate": "67",
+      "grade": "FAIL",
+      "tier": "floor",
+      "file": "src\\styles\\reference.css",
+      "line": 519,
+      "evidence": ".tag: letter-spaced tracked 0.2em at 12px in a label role",
+      "fix": "Labels, captions, table heads, nav links and meta are the body face (or the theme's label face), a step smaller, sentence case, untracked"
+    },
+    {
+      "gate": "67",
+      "grade": "FAIL",
+      "tier": "floor",
+      "file": "src\\styles\\reference.css",
+      "line": 542,
+      "evidence": ".win-bar: letter-spaced tracked 0.2em at 12px in a label role",
+      "fix": "Labels, captions, table heads, nav links and meta are the body face (or the theme's label face), a step smaller, sentence case, untracked"
+    },
+    {
+      "gate": "67",
+      "grade": "FAIL",
+      "tier": "floor",
+      "file": "src\\styles\\reference.css",
+      "line": 583,
+      "evidence": ".rc-zoom: letter-spaced tracked 0.06em at 15px in a label role",
+      "fix": "Labels, captions, table heads, nav links and meta are the body face (or the theme's label face), a step smaller, sentence case, untracked"
+    },
+    {
+      "gate": "67",
+      "grade": "FAIL",
+      "tier": "floor",
+      "file": "src\\styles\\reference.css",
+      "line": 638,
+      "evidence": ".mystery-sub: letter-spaced tracked 0.06em at 14px in a label role",
+      "fix": "Labels, captions, table heads, nav links and meta are the body face (or the theme's label face), a step smaller, sentence case, untracked"
+    },
+    {
+      "gate": "67",
+      "grade": "FAIL",
+      "tier": "floor",
+      "file": "src\\styles\\reference.css",
+      "line": 663,
+      "evidence": ".foot-bar .foot-small: letter-spaced tracked 0.14em at 12px in a label role",
+      "fix": "Labels, captions, table heads, nav links and meta are the body face (or the theme's label face), a step smaller, sentence case, untracked"
+    },
+    {
+      "gate": "7b",
+      "grade": "REFLEX",
+      "tier": "reflex",
+      "file": "src\\styles\\reference.css",
+      "line": 20,
+      "evidence": "pure #fff: --color-art-1: #fff (:root)",
+      "fix": "Tint the base toward the anchor hue"
+    },
+    {
+      "gate": "7b",
+      "grade": "REFLEX",
+      "tier": "reflex",
+      "file": "src\\styles\\reference.css",
+      "line": 38,
+      "evidence": "pure #000: --color-art-19: #000 (:root)",
+      "fix": "Tint the base toward the anchor hue"
+    },
+    {
+      "gate": "7b",
+      "grade": "REFLEX",
+      "tier": "reflex",
+      "file": "src\\styles\\reference.css",
+      "line": 82,
+      "evidence": "pure #fff: color: var(--color-art-1) (.skip)",
+      "fix": "Tint the base toward the anchor hue"
+    },
+    {
+      "gate": "7b",
+      "grade": "REFLEX",
+      "tier": "reflex",
+      "file": "src\\styles\\reference.css",
+      "line": 545,
+      "evidence": "pure #fff: color: var(--color-art-1) (.win-ok)",
+      "fix": "Tint the base toward the anchor hue"
+    },
+    {
+      "gate": "7b",
+      "grade": "REFLEX",
+      "tier": "reflex",
+      "file": "src\\styles\\reference.css",
+      "line": 652,
+      "evidence": "pure #fff: color: var(--color-art-1) (.link-ico--g)",
+      "fix": "Tint the base toward the anchor hue"
+    },
+    {
+      "gate": "12",
+      "grade": "REFLEX",
+      "tier": "reflex",
+      "file": "src\\styles\\reference.css",
+      "line": 383,
+      "evidence": "overshoot easing cubic-bezier(.34,1.7,.5,1) on .thief:hover .thief-body .c-squash,.thief.flick .c-squash",
+      "fix": "Use exponential ease-out on UI state changes"
+    },
+    {
+      "gate": "12",
+      "grade": "REFLEX",
+      "tier": "reflex",
+      "file": "src\\styles\\reference.css",
+      "line": 514,
+      "evidence": "overshoot easing cubic-bezier(.34,1.7,.5,1) on .card:hover .cameo .c-squash",
+      "fix": "Use exponential ease-out on UI state changes"
+    },
+    {
+      "gate": "37",
+      "grade": "REFLEX",
+      "tier": "reflex",
+      "file": "src\\styles\\reference.css",
+      "line": 45,
+      "evidence": "6 font families: pingfang sc, georgia, arial black, courier new, fredoka…",
+      "fix": "Drop the extra family; three is the ceiling"
+    },
+    {
+      "gate": "38iii",
+      "grade": "REFLEX",
+      "tier": "reflex",
+      "file": "src\\styles\\blog.css",
+      "line": 26,
+      "evidence": "accented word inside a heading (.blog-intro h1 span)",
+      "fix": "Set the whole head one way: a line break, a second line at a second size, or the whole head in the accent. Guard: the theme names the coloured word as its signature and it appears once on the page, in the hero"
+    },
+    {
+      "gate": "38iii",
+      "grade": "REFLEX",
+      "tier": "reflex",
+      "file": "src\\styles\\blog.css",
+      "line": 115,
+      "evidence": "accented word inside a heading (.taxonomy-intro h1 span)",
+      "fix": "Set the whole head one way: a line break, a second line at a second size, or the whole head in the accent. Guard: the theme names the coloured word as its signature and it appears once on the page, in the hero"
+    },
+    {
+      "gate": "38iii",
+      "grade": "REFLEX",
+      "tier": "reflex",
+      "file": "src\\styles\\blog.css",
+      "line": 117,
+      "evidence": "accented word inside a heading (.work-intro h1 span)",
+      "fix": "Set the whole head one way: a line break, a second line at a second size, or the whole head in the accent. Guard: the theme names the coloured word as its signature and it appears once on the page, in the hero"
+    },
+    {
+      "gate": "80",
+      "grade": "REFLEX",
+      "tier": "reflex",
+      "file": "http://127.0.0.1:4322/portfolio/",
+      "line": 1,
+      "evidence": "[1440px] drawn illustration: span (169x169, 11 shapes)",
+      "fix": "A photograph (theme.mjs photos), the product built, or type at scale; SVG is for icons, logos and labelled charts or diagrams (imagery.md § 7)"
+    },
+    {
+      "gate": "38iii",
+      "grade": "WAIVER",
+      "tier": "reflex",
+      "file": "src\\styles\\blog.css",
+      "line": 1,
+      "evidence": "waiver on 38iii REJECTED (guard: the accented word sits on 3 selectors …",
+      "fix": "Fix the gate, or satisfy the guard and say why in the page's own words"
+    },
+    {
+      "gate": "44c",
+      "grade": "WAIVER",
+      "tier": "reflex",
+      "file": "src\\components\\About.astro",
+      "line": 1,
+      "evidence": "waiver on 44c REJECTED (guard: the stamp names no hero: posture)",
+      "fix": "Fix the gate, or satisfy the guard and say why in the page's own words"
+    },
+    {
+      "gate": "44c",
+      "grade": "WAIVER",
+      "tier": "reflex",
+      "file": "src\\layouts\\BlogLayout.astro",
+      "line": 1,
+      "evidence": "waiver on 44c REJECTED (guard: the stamp names no hero: posture)",
+      "fix": "Fix the gate, or satisfy the guard and say why in the page's own words"
+    },
+    {
+      "gate": "44c",
+      "grade": "WAIVER",
+      "tier": "reflex",
+      "file": "src\\pages\\blog\\index.astro",
+      "line": 1,
+      "evidence": "waiver on 44c REJECTED (guard: the stamp names no hero: posture)",
+      "fix": "Fix the gate, or satisfy the guard and say why in the page's own words"
+    },
+    {
+      "gate": "44c",
+      "grade": "WAIVER",
+      "tier": "reflex",
+      "file": "src\\pages\\blog\\tags\\[tag].astro",
+      "line": 1,
+      "evidence": "waiver on 44c REJECTED (guard: the stamp names no hero: posture)",
+      "fix": "Fix the gate, or satisfy the guard and say why in the page's own words"
+    },
+    {
+      "gate": "44c",
+      "grade": "WAIVER",
+      "tier": "reflex",
+      "file": "src\\pages\\index.astro",
+      "line": 1,
+      "evidence": "waiver on 44c REJECTED (guard: the stamp names no hero: posture)",
+      "fix": "Fix the gate, or satisfy the guard and say why in the page's own words"
+    },
+    {
+      "gate": "44c",
+      "grade": "WAIVER",
+      "tier": "reflex",
+      "file": "src\\pages\\portfolio\\index.astro",
+      "line": 1,
+      "evidence": "waiver on 44c REJECTED (guard: the stamp names no hero: posture)",
+      "fix": "Fix the gate, or satisfy the guard and say why in the page's own words"
+    },
+    {
+      "gate": "44c",
+      "grade": "WAIVER",
+      "tier": "reflex",
+      "file": "src\\pages\\portfolio\\tags\\[tag].astro",
+      "line": 1,
+      "evidence": "waiver on 44c REJECTED (guard: the stamp names no hero: posture)",
+      "fix": "Fix the gate, or satisfy the guard and say why in the page's own words"
+    },
+    {
+      "gate": "44c",
+      "grade": "WAIVER",
+      "tier": "reflex",
+      "file": "src\\styles\\blog.css",
+      "line": 1,
+      "evidence": "waiver on 44c REJECTED (guard: the stamp names no hero: posture)",
+      "fix": "Fix the gate, or satisfy the guard and say why in the page's own words"
+    },
+    {
+      "gate": "59",
+      "grade": "WAIVER",
+      "tier": "reflex",
+      "file": "src\\components\\About.astro",
+      "line": 1,
+      "evidence": "waiver on 59 REJECTED (reason shares no word with the page)",
+      "fix": "Fix the gate, or satisfy the guard and say why in the page's own words"
+    },
+    {
+      "gate": "59",
+      "grade": "WAIVER",
+      "tier": "reflex",
+      "file": "src\\layouts\\BlogLayout.astro",
+      "line": 1,
+      "evidence": "waiver on 59 REJECTED (reason shares no word with the page)",
+      "fix": "Fix the gate, or satisfy the guard and say why in the page's own words"
+    },
+    {
+      "gate": "59",
+      "grade": "WAIVER",
+      "tier": "reflex",
+      "file": "src\\pages\\blog\\index.astro",
+      "line": 1,
+      "evidence": "waiver on 59 REJECTED (reason shares no word with the page)",
+      "fix": "Fix the gate, or satisfy the guard and say why in the page's own words"
+    },
+    {
+      "gate": "59",
+      "grade": "WAIVER",
+      "tier": "reflex",
+      "file": "src\\pages\\blog\\tags\\[tag].astro",
+      "line": 1,
+      "evidence": "waiver on 59 REJECTED (reason shares no word with the page)",
+      "fix": "Fix the gate, or satisfy the guard and say why in the page's own words"
+    },
+    {
+      "gate": "59",
+      "grade": "WAIVER",
+      "tier": "reflex",
+      "file": "src\\pages\\index.astro",
+      "line": 1,
+      "evidence": "waiver on 59 REJECTED (reason shares no word with the page)",
+      "fix": "Fix the gate, or satisfy the guard and say why in the page's own words"
+    },
+    {
+      "gate": "59",
+      "grade": "WAIVER",
+      "tier": "reflex",
+      "file": "src\\pages\\portfolio\\index.astro",
+      "line": 1,
+      "evidence": "waiver on 59 REJECTED (reason shares no word with the page)",
+      "fix": "Fix the gate, or satisfy the guard and say why in the page's own words"
+    },
+    {
+      "gate": "59",
+      "grade": "WAIVER",
+      "tier": "reflex",
+      "file": "src\\pages\\portfolio\\tags\\[tag].astro",
+      "line": 1,
+      "evidence": "waiver on 59 REJECTED (reason shares no word with the page)",
+      "fix": "Fix the gate, or satisfy the guard and say why in the page's own words"
+    },
+    {
+      "gate": "59",
+      "grade": "WAIVER",
+      "tier": "reflex",
+      "file": "src\\styles\\blog.css",
+      "line": 1,
+      "evidence": "waiver on 59 REJECTED (reason shares no word with the page)",
+      "fix": "Fix the gate, or satisfy the guard and say why in the page's own words"
+    },
+    {
+      "gate": "11",
+      "grade": "WARN",
+      "tier": "reflex",
+      "file": "src\\styles\\blog.css",
+      "line": 124,
+      "evidence": "image transforms on hover (.work-image:hover img)",
+      "fix": "Imagery sits still; give the container the feedback"
+    },
+    {
+      "gate": "28a",
+      "grade": "WARN",
+      "tier": "floor",
+      "file": "src\\components\\BlogArchive.astro",
+      "line": 19,
+      "evidence": "lazy-loaded first image (likely LCP)",
+      "fix": "fetchpriority=high on the LCP element"
+    },
+    {
+      "gate": "40",
+      "grade": "WARN",
+      "tier": "floor",
+      "file": "src\\styles\\reference.css",
+      "line": 374,
+      "evidence": "2.51:1 < 4.5:1 on .rn6",
+      "fix": "Raise the contrast to threshold"
+    },
+    {
+      "gate": "40",
+      "grade": "WARN",
+      "tier": "floor",
+      "file": "src\\styles\\reference.css",
+      "line": 545,
+      "evidence": "2.65:1 < 4.5:1 on .win-ok",
+      "fix": "Raise the contrast to threshold"
+    },
+    {
+      "gate": "40",
+      "grade": "WARN",
+      "tier": "floor",
+      "file": "src\\styles\\reference.css",
+      "line": 592,
+      "evidence": "4.19:1 < 4.5:1 on .clear",
+      "fix": "Raise the contrast to threshold"
+    },
+    {
+      "gate": "40",
+      "grade": "WARN",
+      "tier": "floor",
+      "file": "src\\styles\\reference.css",
+      "line": 652,
+      "evidence": "4.26:1 < 4.5:1 on .link-ico--g",
+      "fix": "Raise the contrast to threshold"
+    },
+    {
+      "gate": "41",
+      "grade": "WARN",
+      "tier": "floor",
+      "file": "src\\styles\\reference.css",
+      "line": 278,
+      "evidence": "dark surface (L 33%) on .hero-shadow sets no text colour",
+      "fix": "Swap text to paper in the same rule"
+    },
+    {
+      "gate": "49",
+      "grade": "WARN",
+      "tier": "floor",
+      "file": "src\\components\\Recent.astro",
+      "line": 25,
+      "evidence": "long clickable label \"图形学 在学习 GAMES101-现代计算机图形学入门-闫令琪\" without nowrap",
+      "fix": "Shorten the label or set nowrap"
+    },
+    {
+      "gate": "49",
+      "grade": "WARN",
+      "tier": "floor",
+      "file": "src\\components\\Recent.astro",
+      "line": 25,
+      "evidence": "long clickable label \"基础知识 我无法描述我的需求，看懂建模软件上的菜单那\" without nowrap",
+      "fix": "Shorten the label or set nowrap"
+    },
+    {
+      "gate": "49",
+      "grade": "WARN",
+      "tier": "floor",
+      "file": "src\\components\\Recent.astro",
+      "line": 25,
+      "evidence": "long clickable label \"3D 建模 GPT-6 在 2D 绘画上好像非常厉害，真的假的？\" without nowrap",
+      "fix": "Shorten the label or set nowrap"
+    },
+    {
+      "gate": "49",
+      "grade": "WARN",
+      "tier": "floor",
+      "file": "src\\components\\Recent.astro",
+      "line": 40,
+      "evidence": "long clickable label \"酷吧 花了很多时间的，中间的特效用了很多视觉模型能力\" without nowrap",
+      "fix": "Shorten the label or set nowrap"
+    },
+    {
+      "gate": "49",
+      "grade": "WARN",
+      "tier": "floor",
+      "file": "src\\components\\Recent.astro",
+      "line": 40,
+      "evidence": "long clickable label \"GitHub 准确来说是 GitHub Pages\" without nowrap",
+      "fix": "Shorten the label or set nowrap"
+    },
+    {
+      "gate": "49",
+      "grade": "WARN",
+      "tier": "floor",
+      "file": "src\\components\\Recent.astro",
+      "line": 40,
+      "evidence": "long clickable label \"客户端 Mac、Windows 都支持，不过体积稍微有点大，看看怎么优…\" without nowrap",
+      "fix": "Shorten the label or set nowrap"
+    },
+    {
+      "gate": "49",
+      "grade": "WARN",
+      "tier": "floor",
+      "file": "src\\components\\Recent.astro",
+      "line": 86,
+      "evidence": "long clickable label \"写点什么 我在读书的那个时候还写博客的，好久没写了\" without nowrap",
+      "fix": "Shorten the label or set nowrap"
+    },
+    {
+      "gate": "F6",
+      "grade": "WARN",
+      "tier": "finish",
+      "file": "src\\styles\\blog.css",
+      "line": 58,
+      "evidence": "numeric selector .post-entry-first .post-number at display size without tabular figures",
+      "fix": "Add font-variant-numeric: tabular-nums"
+    },
+    {
+      "gate": "F15",
+      "grade": "WARN",
+      "tier": "finish",
+      "file": "src\\styles\\blog.css",
+      "line": 1,
+      "evidence": "4 different column gaps across multi-column sections (32px, 48px, clamp(22px,3vw,40px), clamp(20px,3vw,36px))",
+      "fix": "One column gap for every multi-column section"
+    },
+    {
+      "gate": "3",
+      "grade": "DISMISSED",
+      "tier": "reflex",
+      "file": "src\\styles\\blog.css",
+      "line": 83,
+      "evidence": "side stripe border-left: 4px solid var(--purple) on .article-prose blockquote",
+      "fix": "Hairline all round, none, or an accent square"
+    },
+    {
+      "gate": "19",
+      "grade": "NOTE",
+      "tier": "floor",
+      "file": "src\\components\\About.astro",
+      "line": 18,
+      "evidence": "dash \"—\" in copy",
+      "fix": "A comma, a colon, a full stop or parentheses; never a dash"
+    },
+    {
+      "gate": "19",
+      "grade": "NOTE",
+      "tier": "floor",
+      "file": "src\\components\\Tapes.astro",
+      "line": 12,
+      "evidence": "dash \"—\" in copy",
+      "fix": "A comma, a colon, a full stop or parentheses; never a dash"
+    },
+    {
+      "gate": "19",
+      "grade": "NOTE",
+      "tier": "floor",
+      "file": "src\\pages\\index.astro",
+      "line": 24,
+      "evidence": "dash \"—\" in copy",
+      "fix": "A comma, a colon, a full stop or parentheses; never a dash"
+    },
+    {
+      "gate": "24b",
+      "grade": "NOTE",
+      "tier": "reflex",
+      "file": "src\\styles\\blog.css",
+      "line": 22,
+      "evidence": "padding-block: 10px (off the 4px scale) on .blog-header nav a",
+      "fix": "Use the 4px spacing scale"
+    },
+    {
+      "gate": "24b",
+      "grade": "NOTE",
+      "tier": "reflex",
+      "file": "src\\styles\\blog.css",
+      "line": 25,
+      "evidence": "margin: 0 0 22px (off the 4px scale) on .blog-intro h1",
+      "fix": "Use the 4px spacing scale"
+    },
+    {
+      "gate": "24b",
+      "grade": "NOTE",
+      "tier": "reflex",
+      "file": "src\\styles\\blog.css",
+      "line": 26,
+      "evidence": "padding-inline: 10px (off the 4px scale) on .blog-intro h1 span",
+      "fix": "Use the 4px spacing scale"
+    },
+    {
+      "gate": "24b",
+      "grade": "NOTE",
+      "tier": "reflex",
+      "file": "src\\styles\\blog.css",
+      "line": 30,
+      "evidence": "padding: 22px 32px (off the 4px scale) on .doodle-note",
+      "fix": "Use the 4px spacing scale"
+    },
+    {
+      "gate": "24b",
+      "grade": "NOTE",
+      "tier": "reflex",
+      "file": "src\\styles\\blog.css",
+      "line": 31,
+      "evidence": "gap: 18px (off the 4px scale) on .archive-head",
+      "fix": "Use the 4px spacing scale"
+    },
+    {
+      "gate": "24b",
+      "grade": "NOTE",
+      "tier": "reflex",
+      "file": "src\\styles\\blog.css",
+      "line": 37,
+      "evidence": "padding: 7px 18px (off the 4px scale) on .filter-button.replica-control",
+      "fix": "Use the 4px spacing scale"
+    },
+    {
+      "gate": "24b",
+      "grade": "NOTE",
+      "tier": "reflex",
+      "file": "src\\styles\\blog.css",
+      "line": 42,
+      "evidence": "gap: 10px (off the 4px scale) on .blog-search",
+      "fix": "Use the 4px spacing scale"
+    },
+    {
+      "gate": "24b",
+      "grade": "NOTE",
+      "tier": "reflex",
+      "file": "src\\styles\\blog.css",
+      "line": 47,
+      "evidence": "padding: 38px 0 (off the 4px scale) on .post-entry",
+      "fix": "Use the 4px spacing scale"
+    },
+    {
+      "gate": "24b",
+      "grade": "NOTE",
+      "tier": "reflex",
+      "file": "src\\styles\\blog.css",
+      "line": 48,
+      "evidence": "margin: 10px 0 18px (off the 4px scale) on .post-entry-first",
+      "fix": "Use the 4px spacing scale"
+    },
+    {
+      "gate": "24b",
+      "grade": "NOTE",
+      "tier": "reflex",
+      "file": "src\\styles\\blog.css",
+      "line": 49,
+      "evidence": "gap: 10px (off the 4px scale) on .post-date",
+      "fix": "Use the 4px spacing scale"
+    },
+    {
+      "gate": "24b",
+      "grade": "NOTE",
+      "tier": "reflex",
+      "file": "src\\styles\\blog.css",
+      "line": 49,
+      "evidence": "padding-top: 6px (off the 4px scale) on .post-date",
+      "fix": "Use the 4px spacing scale"
+    },
+    {
+      "gate": "24b",
+      "grade": "NOTE",
+      "tier": "reflex",
+      "file": "src\\styles\\blog.css",
+      "line": 50,
+      "evidence": "padding: 1px 10px (off the 4px scale) on .post-date span",
+      "fix": "Use the 4px spacing scale"
+    },
+    {
+      "gate": "24b",
+      "grade": "NOTE",
+      "tier": "reflex",
+      "file": "src\\styles\\blog.css",
+      "line": 55,
+      "evidence": "margin: 18px 0 0 (off the 4px scale) on .post-tags",
+      "fix": "Use the 4px spacing scale"
+    },
+    {
+      "gate": "24b",
+      "grade": "NOTE",
+      "tier": "reflex",
+      "file": "src\\styles\\blog.css",
+      "line": 56,
+      "evidence": "margin-right: 3px (off the 4px scale) on .post-tags li::before",
+      "fix": "Use the 4px spacing scale"
+    },
+    {
+      "gate": "24b",
+      "grade": "NOTE",
+      "tier": "reflex",
+      "file": "src\\styles\\blog.css",
+      "line": 62,
+      "evidence": "gap: 18px (off the 4px scale) on .blog-footer",
+      "fix": "Use the 4px spacing scale"
+    },
+    {
+      "gate": "24b",
+      "grade": "NOTE",
+      "tier": "reflex",
+      "file": "src\\styles\\blog.css",
+      "line": 66,
+      "evidence": "padding: 3px 16px (off the 4px scale) on .article-top span",
+      "fix": "Use the 4px spacing scale"
+    },
+    {
+      "gate": "24b",
+      "grade": "NOTE",
+      "tier": "reflex",
+      "file": "src\\styles\\blog.css",
+      "line": 67,
+      "evidence": "padding: 58px 68px 40px (off the 4px scale) on .article-sheet",
+      "fix": "Use the 4px spacing scale"
+    },
+    {
+      "gate": "24b",
+      "grade": "NOTE",
+      "tier": "reflex",
+      "file": "src\\styles\\blog.css",
+      "line": 68,
+      "evidence": "margin-bottom: 38px (off the 4px scale) on .article-heading",
+      "fix": "Use the 4px spacing scale"
+    },
+    {
+      "gate": "24b",
+      "grade": "NOTE",
+      "tier": "reflex",
+      "file": "src\\styles\\blog.css",
+      "line": 77,
+      "evidence": "margin: 30px 0 14px (off the 4px scale) on .article-prose h3",
+      "fix": "Use the 4px spacing scale"
+    },
+    {
+      "gate": "24b",
+      "grade": "NOTE",
+      "tier": "reflex",
+      "file": "src\\styles\\blog.css",
+      "line": 81,
+      "evidence": "padding-left: 26px (off the 4px scale) on .article-prose ul, .article-prose ol",
+      "fix": "Use the 4px spacing scale"
+    },
+    {
+      "gate": "24b",
+      "grade": "NOTE",
+      "tier": "reflex",
+      "file": "src\\styles\\blog.css",
+      "line": 81,
+      "evidence": "margin-block: 22px (off the 4px scale) on .article-prose ul, .article-prose ol",
+      "fix": "Use the 4px spacing scale"
+    },
+    {
+      "gate": "24b",
+      "grade": "NOTE",
+      "tier": "reflex",
+      "file": "src\\styles\\blog.css",
+      "line": 86,
+      "evidence": "padding: 2px 6px (off the 4px scale) on .article-prose :not(pre) > code",
+      "fix": "Use the 4px spacing scale"
+    },
+    {
+      "gate": "24b",
+      "grade": "NOTE",
+      "tier": "reflex",
+      "file": "src\\styles\\blog.css",
+      "line": 89,
+      "evidence": "padding: 10px 16px (off the 4px scale) on .article-prose td, .article-prose th",
+      "fix": "Use the 4px spacing scale"
+    },
+    {
+      "gate": "24b",
+      "grade": "NOTE",
+      "tier": "reflex",
+      "file": "src\\styles\\blog.css",
+      "line": 93,
+      "evidence": "margin: 0 0 14px (off the 4px scale) on .article-end p",
+      "fix": "Use the 4px spacing scale"
+    },
+    {
+      "gate": "24b",
+      "grade": "NOTE",
+      "tier": "reflex",
+      "file": "src\\styles\\blog.css",
+      "line": 101,
+      "evidence": "gap: 10px (off the 4px scale) on .tag-navigation",
+      "fix": "Use the 4px spacing scale"
+    },
+    {
+      "gate": "24b",
+      "grade": "NOTE",
+      "tier": "reflex",
+      "file": "src\\styles\\blog.css",
+      "line": 107,
+      "evidence": "padding-block: 6px (off the 4px scale) on .post-tags a",
+      "fix": "Use the 4px spacing scale"
+    },
+    {
+      "gate": "24b",
+      "grade": "NOTE",
+      "tier": "reflex",
+      "file": "src\\styles\\blog.css",
+      "line": 109,
+      "evidence": "padding: 2px 10px (off the 4px scale) on .category-link",
+      "fix": "Use the 4px spacing scale"
+    },
+    {
+      "gate": "24b",
+      "grade": "NOTE",
+      "tier": "reflex",
+      "file": "src\\styles\\blog.css",
+      "line": 132,
+      "evidence": "padding: 10px 24px (off the 4px scale) on .work-live",
+      "fix": "Use the 4px spacing scale"
+    },
+    {
+      "gate": "24b",
+      "grade": "NOTE",
+      "tier": "reflex",
+      "file": "src\\styles\\blog.css",
+      "line": 152,
+      "evidence": "padding: 42px 36px 32px (off the 4px scale) on .article-sheet",
+      "fix": "Use the 4px spacing scale"
+    },
+    {
+      "gate": "24b",
+      "grade": "NOTE",
+      "tier": "reflex",
+      "file": "src\\styles\\blog.css",
+      "line": 158,
+      "evidence": "gap: 6px (off the 4px scale) on .blog-brand",
+      "fix": "Use the 4px spacing scale"
+    },
+    {
+      "gate": "24b",
+      "grade": "NOTE",
+      "tier": "reflex",
+      "file": "src\\styles\\blog.css",
+      "line": 160,
+      "evidence": "gap: 14px (off the 4px scale) on .blog-header nav",
+      "fix": "Use the 4px spacing scale"
+    },
+    {
+      "gate": "24b",
+      "grade": "NOTE",
+      "tier": "reflex",
+      "file": "src\\styles\\blog.css",
+      "line": 166,
+      "evidence": "gap: 18px (off the 4px scale) on .blog-tools",
+      "fix": "Use the 4px spacing scale"
+    },
+    {
+      "gate": "24b",
+      "grade": "NOTE",
+      "tier": "reflex",
+      "file": "src\\styles\\blog.css",
+      "line": 168,
+      "evidence": "padding-inline: 15px (off the 4px scale) on .filter-button.replica-control",
+      "fix": "Use the 4px spacing scale"
+    },
+    {
+      "gate": "24b",
+      "grade": "NOTE",
+      "tier": "reflex",
+      "file": "src\\styles\\blog.css",
+      "line": 169,
+      "evidence": "gap: 14px (off the 4px scale) on .post-entry",
+      "fix": "Use the 4px spacing scale"
+    },
+    {
+      "gate": "24b",
+      "grade": "NOTE",
+      "tier": "reflex",
+      "file": "src\\styles\\blog.css",
+      "line": 170,
+      "evidence": "padding: 25px 22px (off the 4px scale) on .post-entry-first",
+      "fix": "Use the 4px spacing scale"
+    },
+    {
+      "gate": "24b",
+      "grade": "NOTE",
+      "tier": "reflex",
+      "file": "src\\styles\\blog.css",
+      "line": 178,
+      "evidence": "padding: 30px 20px 28px (off the 4px scale) on .article-sheet",
+      "fix": "Use the 4px spacing scale"
+    },
+    {
+      "gate": "24b",
+      "grade": "NOTE",
+      "tier": "reflex",
+      "file": "src\\styles\\blog.css",
+      "line": 179,
+      "evidence": "padding-bottom: 25px (off the 4px scale) on .article-heading",
+      "fix": "Use the 4px spacing scale"
+    },
+    {
+      "gate": "24b",
+      "grade": "NOTE",
+      "tier": "reflex",
+      "file": "src\\styles\\blog.css",
+      "line": 184,
+      "evidence": "padding: 14px (off the 4px scale) on .article-prose pre",
+      "fix": "Use the 4px spacing scale"
+    },
+    {
+      "gate": "24b",
+      "grade": "NOTE",
+      "tier": "reflex",
+      "file": "src\\styles\\polish.css",
+      "line": 20,
+      "evidence": "padding: 6px 12px (off the 4px scale) on .skip:focus",
+      "fix": "Use the 4px spacing scale"
+    },
+    {
+      "gate": "24b",
+      "grade": "NOTE",
+      "tier": "reflex",
+      "file": "src\\styles\\polish.css",
+      "line": 32,
+      "evidence": "padding-inline: 10px (off the 4px scale) on .top",
+      "fix": "Use the 4px spacing scale"
+    },
+    {
+      "gate": "24b",
+      "grade": "NOTE",
+      "tier": "reflex",
+      "file": "src\\styles\\polish.css",
+      "line": 33,
+      "evidence": "padding-right: 9px (off the 4px scale) on .logo",
+      "fix": "Use the 4px spacing scale"
+    },
+    {
+      "gate": "24b",
+      "grade": "NOTE",
+      "tier": "reflex",
+      "file": "src\\styles\\polish.css",
+      "line": 33,
+      "evidence": "gap: 3px (off the 4px scale) on .logo",
+      "fix": "Use the 4px spacing scale"
+    },
+    {
+      "gate": "24b",
+      "grade": "NOTE",
+      "tier": "reflex",
+      "file": "src\\styles\\polish.css",
+      "line": 36,
+      "evidence": "gap: 6px (off the 4px scale) on .nav",
+      "fix": "Use the 4px spacing scale"
+    },
+    {
+      "gate": "24b",
+      "grade": "NOTE",
+      "tier": "reflex",
+      "file": "src\\styles\\polish.css",
+      "line": 37,
+      "evidence": "padding-inline: 9px (off the 4px scale) on .nav .pill",
+      "fix": "Use the 4px spacing scale"
+    },
+    {
+      "gate": "24b",
+      "grade": "NOTE",
+      "tier": "reflex",
+      "file": "src\\styles\\polish.css",
+      "line": 38,
+      "evidence": "padding-inline: 6px (off the 4px scale) on .lang [data-l]",
+      "fix": "Use the 4px spacing scale"
+    },
+    {
+      "gate": "24b",
+      "grade": "NOTE",
+      "tier": "reflex",
+      "file": "src\\styles\\polish.css",
+      "line": 52,
+      "evidence": "padding: 10px 12px (off the 4px scale) on .top .nav-section",
+      "fix": "Use the 4px spacing scale"
+    },
+    {
+      "gate": "24b",
+      "grade": "NOTE",
+      "tier": "reflex",
+      "file": "src\\styles\\polish.css",
+      "line": 55,
+      "evidence": "gap: 7px (off the 4px scale) on .top .nav",
+      "fix": "Use the 4px spacing scale"
+    },
+    {
+      "gate": "24b",
+      "grade": "NOTE",
+      "tier": "reflex",
+      "file": "src\\styles\\polish.css",
+      "line": 57,
+      "evidence": "padding: 9px 10px (off the 4px scale) on .top .nav-section",
+      "fix": "Use the 4px spacing scale"
+    },
+    {
+      "gate": "24b",
+      "grade": "NOTE",
+      "tier": "reflex",
+      "file": "src\\styles\\polish.css",
+      "line": 62,
+      "evidence": "gap: 5px (off the 4px scale) on .top .nav",
+      "fix": "Use the 4px spacing scale"
+    },
+    {
+      "gate": "24b",
+      "grade": "NOTE",
+      "tier": "reflex",
+      "file": "src\\styles\\reference.css",
+      "line": 82,
+      "evidence": "padding: 6px 12px (off the 4px scale) on .skip",
+      "fix": "Use the 4px spacing scale"
+    },
+    {
+      "gate": "24b",
+      "grade": "NOTE",
+      "tier": "reflex",
+      "file": "src\\styles\\reference.css",
+      "line": 117,
+      "evidence": "gap: 22px (off the 4px scale) on .intro-stage",
+      "fix": "Use the 4px spacing scale"
+    },
+    {
+      "gate": "24b",
+      "grade": "NOTE",
+      "tier": "reflex",
+      "file": "src\\styles\\reference.css",
+      "line": 118,
+      "evidence": "gap: 10px (off the 4px scale) on .intro-word",
+      "fix": "Use the 4px spacing scale"
+    },
+    {
+      "gate": "24b",
+      "grade": "NOTE",
+      "tier": "reflex",
+      "file": "src\\styles\\reference.css",
+      "line": 171,
+      "evidence": "padding: 4px 16px 4px 6px (off the 4px scale) on .logo",
+      "fix": "Use the 4px spacing scale"
+    },
+    {
+      "gate": "24b",
+      "grade": "NOTE",
+      "tier": "reflex",
+      "file": "src\\styles\\reference.css",
+      "line": 177,
+      "evidence": "padding: 10px 14px (off the 4px scale) on .nav-a",
+      "fix": "Use the 4px spacing scale"
+    },
+    {
+      "gate": "24b",
+      "grade": "NOTE",
+      "tier": "reflex",
+      "file": "src\\styles\\reference.css",
+      "line": 179,
+      "evidence": "gap: 6px (off the 4px scale) on .pill",
+      "fix": "Use the 4px spacing scale"
+    },
+    {
+      "gate": "24b",
+      "grade": "NOTE",
+      "tier": "reflex",
+      "file": "src\\styles\\reference.css",
+      "line": 179,
+      "evidence": "padding: 10px 16px (off the 4px scale) on .pill",
+      "fix": "Use the 4px spacing scale"
+    },
+    {
+      "gate": "24b",
+      "grade": "NOTE",
+      "tier": "reflex",
+      "file": "src\\styles\\reference.css",
+      "line": 184,
+      "evidence": "padding: 6px 9px (off the 4px scale) on .lang [data-l]",
+      "fix": "Use the 4px spacing scale"
+    },
+    {
+      "gate": "24b",
+      "grade": "NOTE",
+      "tier": "reflex",
+      "file": "src\\styles\\reference.css",
+      "line": 193,
+      "evidence": "padding: 13px 20px (off the 4px scale) on .pill--lg",
+      "fix": "Use the 4px spacing scale"
+    },
+    {
+      "gate": "24b",
+      "grade": "NOTE",
+      "tier": "reflex",
+      "file": "src\\styles\\reference.css",
+      "line": 209,
+      "evidence": "padding: 110px clamp(18px,4vw,48px) … (off the 4px scale) on .hero",
+      "fix": "Use the 4px spacing scale"
+    },
+    {
+      "gate": "24b",
+      "grade": "NOTE",
+      "tier": "reflex",
+      "file": "src\\styles\\reference.css",
+      "line": 211,
+      "evidence": "margin: 0 0 14px (off the 4px scale) on .kicker",
+      "fix": "Use the 4px spacing scale"
+    },
+    {
+      "gate": "24b",
+      "grade": "NOTE",
+      "tier": "reflex",
+      "file": "src\\styles\\reference.css",
+      "line": 211,
+      "evidence": "padding: 8px 14px (off the 4px scale) on .kicker",
+      "fix": "Use the 4px spacing scale"
+    },
+    {
+      "gate": "24b",
+      "grade": "NOTE",
+      "tier": "reflex",
+      "file": "src\\styles\\reference.css",
+      "line": 214,
+      "evidence": "gap: clamp(4px,.6vw,9px) (off the 4px scale) on .title",
+      "fix": "Use the 4px spacing scale"
+    },
+    {
+      "gate": "24b",
+      "grade": "NOTE",
+      "tier": "reflex",
+      "file": "src\\styles\\reference.css",
+      "line": 225,
+      "evidence": "margin: 0 0 18px (off the 4px scale) on .intro-p",
+      "fix": "Use the 4px spacing scale"
+    },
+    {
+      "gate": "24b",
+      "grade": "NOTE",
+      "tier": "reflex",
+      "file": "src\\styles\\reference.css",
+      "line": 227,
+      "evidence": "margin-bottom: 22px (off the 4px scale) on .chips",
+      "fix": "Use the 4px spacing scale"
+    },
+    {
+      "gate": "24b",
+      "grade": "NOTE",
+      "tier": "reflex",
+      "file": "src\\styles\\reference.css",
+      "line": 239,
+      "evidence": "padding: 0 3px (off the 4px scale) on .mark",
+      "fix": "Use the 4px spacing scale"
+    },
+    {
+      "gate": "24b",
+      "grade": "NOTE",
+      "tier": "reflex",
+      "file": "src\\styles\\reference.css",
+      "line": 251,
+      "evidence": "margin-left: -7px (off the 4px scale) on .bubble::after",
+      "fix": "Use the 4px spacing scale"
+    },
+    {
+      "gate": "24b",
+      "grade": "NOTE",
+      "tier": "reflex",
+      "file": "src\\styles\\reference.css",
+      "line": 261,
+      "evidence": "gap: 7px (off the 4px scale) on .live",
+      "fix": "Use the 4px spacing scale"
+    },
+    {
+      "gate": "24b",
+      "grade": "NOTE",
+      "tier": "reflex",
+      "file": "src\\styles\\reference.css",
+      "line": 261,
+      "evidence": "padding: 7px 14px (off the 4px scale) on .live",
+      "fix": "Use the 4px spacing scale"
+    },
+    {
+      "gate": "24b",
+      "grade": "NOTE",
+      "tier": "reflex",
+      "file": "src\\styles\\reference.css",
+      "line": 265,
+      "evidence": "padding: 6px 12px (off the 4px scale) on .est",
+      "fix": "Use the 4px spacing scale"
+    },
+    {
+      "gate": "24b",
+      "grade": "NOTE",
+      "tier": "reflex",
+      "file": "src\\styles\\reference.css",
+      "line": 300,
+      "evidence": "padding: 10px 14px (off the 4px scale) on .say",
+      "fix": "Use the 4px spacing scale"
+    },
+    {
+      "gate": "24b",
+      "grade": "NOTE",
+      "tier": "reflex",
+      "file": "src\\styles\\reference.css",
+      "line": 340,
+      "evidence": "margin: 10px 0 0 (off the 4px scale) on .tapes",
+      "fix": "Use the 4px spacing scale"
+    },
+    {
+      "gate": "24b",
+      "grade": "NOTE",
+      "tier": "reflex",
+      "file": "src\\styles\\reference.css",
+      "line": 350,
+      "evidence": "padding: 14px 18px (off the 4px scale) on .tape-run span",
+      "fix": "Use the 4px spacing scale"
+    },
+    {
+      "gate": "24b",
+      "grade": "NOTE",
+      "tier": "reflex",
+      "file": "src\\styles\\reference.css",
+      "line": 351,
+      "evidence": "padding: 12px 18px (off the 4px scale) on .tape--pink .tape-run span",
+      "fix": "Use the 4px spacing scale"
+    },
+    {
+      "gate": "24b",
+      "grade": "NOTE",
+      "tier": "reflex",
+      "file": "src\\styles\\reference.css",
+      "line": 355,
+      "evidence": "gap: 3px (off the 4px scale) on .tape--ink .p5-day",
+      "fix": "Use the 4px spacing scale"
+    },
+    {
+      "gate": "24b",
+      "grade": "NOTE",
+      "tier": "reflex",
+      "file": "src\\styles\\reference.css",
+      "line": 355,
+      "evidence": "padding: 10px 6px 10px 6px (off the 4px scale) on .tape--ink .p5-day",
+      "fix": "Use the 4px spacing scale"
+    },
+    {
+      "gate": "24b",
+      "grade": "NOTE",
+      "tier": "reflex",
+      "file": "src\\styles\\reference.css",
+      "line": 358,
+      "evidence": "gap: 3px (off the 4px scale) on .tape--ink .p5-night",
+      "fix": "Use the 4px spacing scale"
+    },
+    {
+      "gate": "24b",
+      "grade": "NOTE",
+      "tier": "reflex",
+      "file": "src\\styles\\reference.css",
+      "line": 358,
+      "evidence": "padding: 8px 6px 8px 4px (off the 4px scale) on .tape--ink .p5-night",
+      "fix": "Use the 4px spacing scale"
+    },
+    {
+      "gate": "24b",
+      "grade": "NOTE",
+      "tier": "reflex",
+      "file": "src\\styles\\reference.css",
+      "line": 363,
+      "evidence": "padding: 0 3px (off the 4px scale) on .rn-p",
+      "fix": "Use the 4px spacing scale"
+    },
+    {
+      "gate": "24b",
+      "grade": "NOTE",
+      "tier": "reflex",
+      "file": "src\\styles\\reference.css",
+      "line": 392,
+      "evidence": "gap: 3px (off the 4px scale) on .thief-card",
+      "fix": "Use the 4px spacing scale"
+    },
+    {
+      "gate": "24b",
+      "grade": "NOTE",
+      "tier": "reflex",
+      "file": "src\\styles\\reference.css",
+      "line": 393,
+      "evidence": "padding: 10px 14px 9px (off the 4px scale) on .thief-card",
+      "fix": "Use the 4px spacing scale"
+    },
+    {
+      "gate": "24b",
+      "grade": "NOTE",
+      "tier": "reflex",
+      "file": "src\\styles\\reference.css",
+      "line": 400,
+      "evidence": "padding: 4px 8px 3px (off the 4px scale) on .thief-hint",
+      "fix": "Use the 4px spacing scale"
+    },
+    {
+      "gate": "24b",
+      "grade": "NOTE",
+      "tier": "reflex",
+      "file": "src\\styles\\reference.css",
+      "line": 411,
+      "evidence": "padding: 6px (off the 4px scale) on .cc-card",
+      "fix": "Use the 4px spacing scale"
+    },
+    {
+      "gate": "24b",
+      "grade": "NOTE",
+      "tier": "reflex",
+      "file": "src\\styles\\reference.css",
+      "line": 413,
+      "evidence": "padding: clamp(26px,5vw,44px) clamp(… (off the 4px scale) on .cc-face",
+      "fix": "Use the 4px spacing scale"
+    },
+    {
+      "gate": "24b",
+      "grade": "NOTE",
+      "tier": "reflex",
+      "file": "src\\styles\\reference.css",
+      "line": 414,
+      "evidence": "padding: 0 0 3px (off the 4px scale) on .cc-x",
+      "fix": "Use the 4px spacing scale"
+    },
+    {
+      "gate": "24b",
+      "grade": "NOTE",
+      "tier": "reflex",
+      "file": "src\\styles\\reference.css",
+      "line": 420,
+      "evidence": "margin: 0 0 18px (off the 4px scale) on .cc-title",
+      "fix": "Use the 4px spacing scale"
+    },
+    {
+      "gate": "24b",
+      "grade": "NOTE",
+      "tier": "reflex",
+      "file": "src\\styles\\reference.css",
+      "line": 420,
+      "evidence": "padding-right: 130px (off the 4px scale) on .cc-title",
+      "fix": "Use the 4px spacing scale"
+    },
+    {
+      "gate": "24b",
+      "grade": "NOTE",
+      "tier": "reflex",
+      "file": "src\\styles\\reference.css",
+      "line": 421,
+      "evidence": "gap: 3px (off the 4px scale) on .cc-title-rn .rn-word",
+      "fix": "Use the 4px spacing scale"
+    },
+    {
+      "gate": "24b",
+      "grade": "NOTE",
+      "tier": "reflex",
+      "file": "src\\styles\\reference.css",
+      "line": 426,
+      "evidence": "margin: 0 0 6px (off the 4px scale) on .cc-body p",
+      "fix": "Use the 4px spacing scale"
+    },
+    {
+      "gate": "24b",
+      "grade": "NOTE",
+      "tier": "reflex",
+      "file": "src\\styles\\reference.css",
+      "line": 427,
+      "evidence": "margin: 0 3px (off the 4px scale) on .cc-body .rn-word",
+      "fix": "Use the 4px spacing scale"
+    },
+    {
+      "gate": "24b",
+      "grade": "NOTE",
+      "tier": "reflex",
+      "file": "src\\styles\\reference.css",
+      "line": 461,
+      "evidence": "padding: 90px clamp(16px,4vw,48px) 1… (off the 4px scale) on .band",
+      "fix": "Use the 4px spacing scale"
+    },
+    {
+      "gate": "24b",
+      "grade": "NOTE",
+      "tier": "reflex",
+      "file": "src\\styles\\reference.css",
+      "line": 498,
+      "evidence": "gap: clamp(22px,3vw,40px) (off the 4px scale) on .cards",
+      "fix": "Use the 4px spacing scale"
+    },
+    {
+      "gate": "24b",
+      "grade": "NOTE",
+      "tier": "reflex",
+      "file": "src\\styles\\reference.css",
+      "line": 500,
+      "evidence": "padding: 16px 16px 22px (off the 4px scale) on .card",
+      "fix": "Use the 4px spacing scale"
+    },
+    {
+      "gate": "24b",
+      "grade": "NOTE",
+      "tier": "reflex",
+      "file": "src\\styles\\reference.css",
+      "line": 516,
+      "evidence": "padding: 16px 6px 0 (off the 4px scale) on .card-body",
+      "fix": "Use the 4px spacing scale"
+    },
+    {
+      "gate": "24b",
+      "grade": "NOTE",
+      "tier": "reflex",
+      "file": "src\\styles\\reference.css",
+      "line": 517,
+      "evidence": "gap: 10px (off the 4px scale) on .card-meta",
+      "fix": "Use the 4px spacing scale"
+    },
+    {
+      "gate": "24b",
+      "grade": "NOTE",
+      "tier": "reflex",
+      "file": "src\\styles\\reference.css",
+      "line": 518,
+      "evidence": "padding: 6px 10px (off the 4px scale) on .card-meta time",
+      "fix": "Use the 4px spacing scale"
+    },
+    {
+      "gate": "24b",
+      "grade": "NOTE",
+      "tier": "reflex",
+      "file": "src\\styles\\reference.css",
+      "line": 520,
+      "evidence": "margin: 12px 0 6px (off the 4px scale) on .card h3",
+      "fix": "Use the 4px spacing scale"
+    },
+    {
+      "gate": "24b",
+      "grade": "NOTE",
+      "tier": "reflex",
+      "file": "src\\styles\\reference.css",
+      "line": 534,
+      "evidence": "margin-top: -77px (off the 4px scale) on .raster",
+      "fix": "Use the 4px spacing scale"
+    },
+    {
+      "gate": "24b",
+      "grade": "NOTE",
+      "tier": "reflex",
+      "file": "src\\styles\\reference.css",
+      "line": 534,
+      "evidence": "padding: 6px (off the 4px scale) on .raster",
+      "fix": "Use the 4px spacing scale"
+    },
+    {
+      "gate": "24b",
+      "grade": "NOTE",
+      "tier": "reflex",
+      "file": "src\\styles\\reference.css",
+      "line": 542,
+      "evidence": "padding-right: 10px (off the 4px scale) on .win-bar",
+      "fix": "Use the 4px spacing scale"
+    },
+    {
+      "gate": "24b",
+      "grade": "NOTE",
+      "tier": "reflex",
+      "file": "src\\styles\\reference.css",
+      "line": 545,
+      "evidence": "padding: 6px 18px (off the 4px scale) on .win-ok",
+      "fix": "Use the 4px spacing scale"
+    },
+    {
+      "gate": "24b",
+      "grade": "NOTE",
+      "tier": "reflex",
+      "file": "src\\styles\\reference.css",
+      "line": 553,
+      "evidence": "margin: -18px 0 0 -17px (off the 4px scale) on .rc-cone",
+      "fix": "Use the 4px spacing scale"
+    },
+    {
+      "gate": "24b",
+      "grade": "NOTE",
+      "tier": "reflex",
+      "file": "src\\styles\\reference.css",
+      "line": 556,
+      "evidence": "margin: -25px 0 0 -38px (off the 4px scale) on .rc-car",
+      "fix": "Use the 4px spacing scale"
+    },
+    {
+      "gate": "24b",
+      "grade": "NOTE",
+      "tier": "reflex",
+      "file": "src\\styles\\reference.css",
+      "line": 583,
+      "evidence": "padding: 7px 10px (off the 4px scale) on .rc-zoom",
+      "fix": "Use the 4px spacing scale"
+    },
+    {
+      "gate": "24b",
+      "grade": "NOTE",
+      "tier": "reflex",
+      "file": "src\\styles\\reference.css",
+      "line": 588,
+      "evidence": "gap: 6px (off the 4px scale) on .hp",
+      "fix": "Use the 4px spacing scale"
+    },
+    {
+      "gate": "24b",
+      "grade": "NOTE",
+      "tier": "reflex",
+      "file": "src\\styles\\reference.css",
+      "line": 592,
+      "evidence": "padding: 10px 16px (off the 4px scale) on .clear",
+      "fix": "Use the 4px spacing scale"
+    },
+    {
+      "gate": "24b",
+      "grade": "NOTE",
+      "tier": "reflex",
+      "file": "src\\styles\\reference.css",
+      "line": 603,
+      "evidence": "margin-top: -75px (off the 4px scale) on .paper",
+      "fix": "Use the 4px spacing scale"
+    },
+    {
+      "gate": "24b",
+      "grade": "NOTE",
+      "tier": "reflex",
+      "file": "src\\styles\\reference.css",
+      "line": 611,
+      "evidence": "margin: -52px 0 0 -6px (off the 4px scale) on .pencil",
+      "fix": "Use the 4px spacing scale"
+    },
+    {
+      "gate": "24b",
+      "grade": "NOTE",
+      "tier": "reflex",
+      "file": "src\\styles\\reference.css",
+      "line": 622,
+      "evidence": "padding: 34px 30px (off the 4px scale) on .about-box",
+      "fix": "Use the 4px spacing scale"
+    },
+    {
+      "gate": "24b",
+      "grade": "NOTE",
+      "tier": "reflex",
+      "file": "src\\styles\\reference.css",
+      "line": 624,
+      "evidence": "padding: 16px 22px 18px (off the 4px scale) on .kq-bubble",
+      "fix": "Use the 4px spacing scale"
+    },
+    {
+      "gate": "24b",
+      "grade": "NOTE",
+      "tier": "reflex",
+      "file": "src\\styles\\reference.css",
+      "line": 627,
+      "evidence": "margin: 14px 0 0 6px (off the 4px scale) on .kq-by",
+      "fix": "Use the 4px spacing scale"
+    },
+    {
+      "gate": "24b",
+      "grade": "NOTE",
+      "tier": "reflex",
+      "file": "src\\styles\\reference.css",
+      "line": 629,
+      "evidence": "padding: 5px 8px (off the 4px scale) on .kq-tag",
+      "fix": "Use the 4px spacing scale"
+    },
+    {
+      "gate": "24b",
+      "grade": "NOTE",
+      "tier": "reflex",
+      "file": "src\\styles\\reference.css",
+      "line": 643,
+      "evidence": "gap: 18px (off the 4px scale) on .links",
+      "fix": "Use the 4px spacing scale"
+    },
+    {
+      "gate": "24b",
+      "grade": "NOTE",
+      "tier": "reflex",
+      "file": "src\\styles\\reference.css",
+      "line": 644,
+      "evidence": "padding: 18px 20px (off the 4px scale) on .link-card",
+      "fix": "Use the 4px spacing scale"
+    },
+    {
+      "gate": "24b",
+      "grade": "NOTE",
+      "tier": "reflex",
+      "file": "src\\styles\\reference.css",
+      "line": 656,
+      "evidence": "padding: 0 20px 34px (off the 4px scale) on .foot",
+      "fix": "Use the 4px spacing scale"
+    },
+    {
+      "gate": "24b",
+      "grade": "NOTE",
+      "tier": "reflex",
+      "file": "src\\styles\\reference.css",
+      "line": 657,
+      "evidence": "gap: clamp(4px,2vw,26px) (off the 4px scale) on .foot-cats",
+      "fix": "Use the 4px spacing scale"
+    },
+    {
+      "gate": "24b",
+      "grade": "NOTE",
+      "tier": "reflex",
+      "file": "src\\styles\\reference.css",
+      "line": 662,
+      "evidence": "margin: 6px 0 (off the 4px scale) on .foot-bar p",
+      "fix": "Use the 4px spacing scale"
+    },
+    {
+      "gate": "24b",
+      "grade": "NOTE",
+      "tier": "reflex",
+      "file": "src\\styles\\reference.css",
+      "line": 671,
+      "evidence": "padding: 8px 10px (off the 4px scale) on .buddy-say",
+      "fix": "Use the 4px spacing scale"
+    },
+    {
+      "gate": "24b",
+      "grade": "NOTE",
+      "tier": "reflex",
+      "file": "src\\styles\\reference.css",
+      "line": 688,
+      "evidence": "padding: 12px 14px (off the 4px scale) on .top",
+      "fix": "Use the 4px spacing scale"
+    },
+    {
+      "gate": "24b",
+      "grade": "NOTE",
+      "tier": "reflex",
+      "file": "src\\styles\\reference.css",
+      "line": 691,
+      "evidence": "padding: 9px 13px (off the 4px scale) on .pill",
+      "fix": "Use the 4px spacing scale"
+    },
+    {
+      "gate": "24b",
+      "grade": "NOTE",
+      "tier": "reflex",
+      "file": "src\\styles\\reference.css",
+      "line": 693,
+      "evidence": "padding: 84px 18px 20px (off the 4px scale) on .hero",
+      "fix": "Use the 4px spacing scale"
+    },
+    {
+      "gate": "24b",
+      "grade": "NOTE",
+      "tier": "reflex",
+      "file": "src\\styles\\reference.css",
+      "line": 699,
+      "evidence": "padding: 9px 12px 8px (off the 4px scale) on .thief-card",
+      "fix": "Use the 4px spacing scale"
+    },
+    {
+      "gate": "24b",
+      "grade": "NOTE",
+      "tier": "reflex",
+      "file": "src\\styles\\reference.css",
+      "line": 704,
+      "evidence": "padding: 70px 16px 80px (off the 4px scale) on .band",
+      "fix": "Use the 4px spacing scale"
+    },
+    {
+      "gate": "24b",
+      "grade": "NOTE",
+      "tier": "reflex",
+      "file": "src\\styles\\reference.css",
+      "line": 710,
+      "evidence": "margin: -20px 0 0 -31px (off the 4px scale) on .rc-car",
+      "fix": "Use the 4px spacing scale"
+    },
+    {
+      "gate": "24b",
+      "grade": "NOTE",
+      "tier": "reflex",
+      "file": "src\\styles\\reference.css",
+      "line": 719,
+      "evidence": "padding: 28px 22px (off the 4px scale) on .about-box",
+      "fix": "Use the 4px spacing scale"
+    },
+    {
+      "gate": "24b",
+      "grade": "NOTE",
+      "tier": "reflex",
+      "file": "src\\styles\\reference.css",
+      "line": 730,
+      "evidence": "padding: 12px 16px 14px (off the 4px scale) on .kq-bubble",
+      "fix": "Use the 4px spacing scale"
+    },
+    {
+      "gate": "44c",
+      "grade": "NOTE",
+      "tier": "reflex",
+      "file": "http://127.0.0.1:4322/blog/",
+      "line": 1,
+      "evidence": "[1440px] hero ends at 436px of a 900px screen",
+      "fix": "Fill the first screen with the visual or the headline, not with copy"
+    },
+    {
+      "gate": "44c",
+      "grade": "NOTE",
+      "tier": "reflex",
+      "file": "http://127.0.0.1:4322/blog/",
+      "line": 1,
+      "evidence": "[1440px] hero visual sits 552px from the text and 174px from the viewport edge",
+      "fix": "Bring the visual to within 48 to 120px of the text; never pin it to the corner"
+    },
+    {
+      "gate": "44c",
+      "grade": "NOTE",
+      "tier": "reflex",
+      "file": "http://127.0.0.1:4322/portfolio/",
+      "line": 1,
+      "evidence": "[1440px] hero ends at 436px of a 900px screen",
+      "fix": "Fill the first screen with the visual or the headline, not with copy"
+    },
+    {
+      "gate": "44c",
+      "grade": "NOTE",
+      "tier": "reflex",
+      "file": "http://127.0.0.1:4322/portfolio/",
+      "line": 1,
+      "evidence": "[1440px] hero visual sits 552px from the text and 174px from the viewport edge",
+      "fix": "Bring the visual to within 48 to 120px of the text; never pin it to the corner"
+    },
+    {
+      "gate": "59",
+      "grade": "NOTE",
+      "tier": "reflex",
+      "file": "http://127.0.0.1:4322/blog/",
+      "line": 1,
+      "evidence": "[1440px] smallest gap between sections is 105px (gaps: 105, 154)",
+      "fix": "120px or more between sections, by the --section-gap steps"
+    },
+    {
+      "gate": "59",
+      "grade": "NOTE",
+      "tier": "reflex",
+      "file": "http://127.0.0.1:4322/portfolio/",
+      "line": 1,
+      "evidence": "[1440px] smallest gap between sections is 105px (gaps: 105, 170)",
+      "fix": "120px or more between sections, by the --section-gap steps"
+    },
+    {
+      "gate": "77",
+      "grade": "NOTE",
+      "tier": "reflex",
+      "file": "http://127.0.0.1:4322/blog/",
+      "line": 1,
+      "evidence": "[1440px] 3 sections, hero and footer included",
+      "fix": "A landing strip, not a page: six to nine sections, five on a thin prompt (layout.md § 3)"
+    },
+    {
+      "gate": "77",
+      "grade": "NOTE",
+      "tier": "reflex",
+      "file": "http://127.0.0.1:4322/portfolio/",
+      "line": 1,
+      "evidence": "[1440px] 3 sections, hero and footer included",
+      "fix": "A landing strip, not a page: six to nine sections, five on a thin prompt (layout.md § 3)"
+    },
+    {
+      "gate": "77",
+      "grade": "NOTE",
+      "tier": "reflex",
+      "file": "http://127.0.0.1:4322/portfolio/cocofhu-replica/",
+      "line": 1,
+      "evidence": "[1440px] 1 sections, hero and footer included",
+      "fix": "A landing strip, not a page: six to nine sections, five on a thin prompt (layout.md § 3)"
+    },
+    {
+      "gate": "78",
+      "grade": "NOTE",
+      "tier": "reflex",
+      "file": "http://127.0.0.1:4322/blog/",
+      "line": 1,
+      "evidence": "[1440px] section heads render at 27px under a 72px hero head",
+      "fix": "h2 at --text-section (about 52px at 1440), item titles at --text-title (layout.md § 2)"
+    },
+    {
+      "gate": "78",
+      "grade": "NOTE",
+      "tier": "reflex",
+      "file": "http://127.0.0.1:4322/portfolio/",
+      "line": 1,
+      "evidence": "[1440px] section heads render at 27px under a 72px hero head",
+      "fix": "h2 at --text-section (about 52px at 1440), item titles at --text-title (layout.md § 2)"
+    },
+    {
+      "gate": "79",
+      "grade": "NOTE",
+      "tier": "reflex",
+      "file": "http://127.0.0.1:4322/portfolio/cocofhu-replica/",
+      "line": 1,
+      "evidence": "[1440px] 473px of nothing between the hero's last content (y 427) and the fold",
+      "fix": "Centre the content in the screen and grow the visual or the head (layout.md § 6); never fill it with copy"
+    },
+    {
+      "gate": "waive",
+      "grade": "NOTE",
+      "tier": "ledger",
+      "file": "src\\components\\About.astro",
+      "line": 1,
+      "evidence": "5 reflex gates waived (24b, 38iii, 49b, 78, 79): that is a house style,…",
+      "fix": "Lock it into a design.md so later pages inherit it instead of re-arguing it"
+    },
+    {
+      "gate": "waive",
+      "grade": "NOTE",
+      "tier": "ledger",
+      "file": "src\\layouts\\BlogLayout.astro",
+      "line": 1,
+      "evidence": "5 reflex gates waived (24b, 38iii, 49b, 78, 79): that is a house style,…",
+      "fix": "Lock it into a design.md so later pages inherit it instead of re-arguing it"
+    },
+    {
+      "gate": "waive",
+      "grade": "NOTE",
+      "tier": "ledger",
+      "file": "src\\pages\\blog\\index.astro",
+      "line": 1,
+      "evidence": "5 reflex gates waived (24b, 38iii, 49b, 78, 79): that is a house style,…",
+      "fix": "Lock it into a design.md so later pages inherit it instead of re-arguing it"
+    },
+    {
+      "gate": "waive",
+      "grade": "NOTE",
+      "tier": "ledger",
+      "file": "src\\pages\\blog\\tags\\[tag].astro",
+      "line": 1,
+      "evidence": "5 reflex gates waived (24b, 38iii, 49b, 78, 79): that is a house style,…",
+      "fix": "Lock it into a design.md so later pages inherit it instead of re-arguing it"
+    },
+    {
+      "gate": "waive",
+      "grade": "NOTE",
+      "tier": "ledger",
+      "file": "src\\pages\\index.astro",
+      "line": 1,
+      "evidence": "5 reflex gates waived (24b, 38iii, 49b, 78, 79): that is a house style,…",
+      "fix": "Lock it into a design.md so later pages inherit it instead of re-arguing it"
+    },
+    {
+      "gate": "waive",
+      "grade": "NOTE",
+      "tier": "ledger",
+      "file": "src\\pages\\portfolio\\index.astro",
+      "line": 1,
+      "evidence": "5 reflex gates waived (24b, 38iii, 49b, 78, 79): that is a house style,…",
+      "fix": "Lock it into a design.md so later pages inherit it instead of re-arguing it"
+    },
+    {
+      "gate": "waive",
+      "grade": "NOTE",
+      "tier": "ledger",
+      "file": "src\\pages\\portfolio\\tags\\[tag].astro",
+      "line": 1,
+      "evidence": "5 reflex gates waived (24b, 38iii, 49b, 78, 79): that is a house style,…",
+      "fix": "Lock it into a design.md so later pages inherit it instead of re-arguing it"
+    },
+    {
+      "gate": "waive",
+      "grade": "NOTE",
+      "tier": "ledger",
+      "file": "src\\styles\\blog.css",
+      "line": 1,
+      "evidence": "4 reflex gates waived (24b, 49b, 78, 79): that is a house style, not a …",
+      "fix": "Lock it into a design.md so later pages inherit it instead of re-arguing it"
+    }
+  ]
+}

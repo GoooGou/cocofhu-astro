@@ -1,0 +1,38 @@
+---
+import { catSVG } from '../scripts/cats.js';
+---
+<section class="band band--about" id="about">
+      <div class="band-inner">
+        <div class="band-head">
+          <p class="kicker-pill reveal">✦ ABOUT</p>
+          <h2 class="chapter" data-chapter="chAbout">关于我</h2>
+          <span class="rule reveal" aria-hidden="true"></span>
+          <span class="count reveal">ME</span>
+        </div>
+        <p class="lede reveal" data-i18n="ledeAbout">滑到这里打个招呼</p>
+
+        <div class="about">
+          <div class="about-box reveal">
+            <figure class="kq">
+              <blockquote class="kq-bubble"><p class="mystery" data-i18n="mystery">老实写代码，一定很枯燥吧</p></blockquote>
+              <figcaption class="kq-by" data-i18n="mysteryBy">— 久留美猫</figcaption>
+            </figure>
+            <span class="kq-tag" data-i18n="kqTag"><button type="button" class="mark">125倍杠杆梭哈<span class="bubble" role="tooltip">快去看 FX戦士くるみちゃん</span></button></span>
+            <svg class="kq-chart" viewBox="0 0 150 90" aria-hidden="true"><path class="kq-grid" d="M0 22H150M0 45H150M0 68H150"/><g class="kq-c" style="--i:0"><path d="M12 30V70"/><rect x="6" y="40" width="12" height="22" class="up"/></g><g class="kq-c" style="--i:1"><path d="M32 22V62"/><rect x="26" y="30" width="12" height="20" class="dn"/></g><g class="kq-c" style="--i:2"><path d="M52 34V76"/><rect x="46" y="44" width="12" height="24" class="dn"/></g><g class="kq-c" style="--i:3"><path d="M72 18V60"/><rect x="66" y="26" width="12" height="26" class="up"/></g><g class="kq-c" style="--i:4"><path d="M92 8V44"/><rect x="86" y="14" width="12" height="20" class="up"/></g><g class="kq-c" style="--i:5"><path d="M112 20V58"/><rect x="106" y="26" width="12" height="22" class="dn"/></g><g class="kq-c" style="--i:6"><path d="M132 4V36"/><rect x="126" y="8" width="12" height="18" class="up"/></g></svg>
+            <span class="peek" id="peek" data-cat="kurumi"><Fragment set:html={catSVG('kurumi', false)} /></span>
+          </div>
+          <div class="links">
+            <a class="link-card reveal" style="--d:80ms" href="https://github.com/cocofhu" target="_blank" rel="noopener">
+              <span class="link-ico"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2a10 10 0 0 0-3.2 19.5c.5.1.7-.2.7-.5v-1.7c-2.8.6-3.4-1.3-3.4-1.3-.4-1.2-1.1-1.5-1.1-1.5-.9-.6.1-.6.1-.6 1 .1 1.5 1 1.5 1 .9 1.5 2.4 1.1 2.9.8.1-.6.4-1.1.6-1.3-2.2-.3-4.6-1.1-4.6-5 0-1.1.4-2 1-2.7-.1-.3-.4-1.3.1-2.7 0 0 .8-.3 2.8 1a9.6 9.6 0 0 1 5 0c1.9-1.3 2.8-1 2.8-1 .5 1.4.2 2.4.1 2.7.6.7 1 1.6 1 2.7 0 3.9-2.4 4.7-4.6 5 .4.3.7.9.7 1.9V21c0 .3.2.6.7.5A10 10 0 0 0 12 2z"/></svg></span>
+              <span><b>GitHub</b><small>github.com/cocofhu</small></span>
+              <svg class="ext" viewBox="0 0 16 16" aria-hidden="true"><path d="M6 3h7v7M13 3L4 12"/></svg>
+            </a>
+            <a class="link-card link-card--pink reveal" style="--d:160ms" href="https://github.com/cocofhu/grasp" target="_blank" rel="noopener">
+              <span class="link-ico link-ico--g">G</span>
+              <span><b>Grasp</b><small data-i18n="graspSub">多个 coding agent 的可视化工作流 · 开源</small></span>
+              <svg class="ext" viewBox="0 0 16 16" aria-hidden="true"><path d="M6 3h7v7M13 3L4 12"/></svg>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>

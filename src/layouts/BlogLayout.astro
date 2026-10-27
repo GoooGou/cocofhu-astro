@@ -1,0 +1,40 @@
+---
+import '../styles/library.css';
+import '../styles/reference.css';
+import '../styles/polish.css';
+import '../styles/blog.css';
+import { catSVG } from '../scripts/cats.js';
+interface Props { title: string; description: string; article?: boolean; image?: string | null; section?: 'blog' | 'portfolio'; }
+const { title, description, article = false, image, section = 'blog' } = Astro.props;
+const canonical = new URL(Astro.url.pathname, Astro.site);
+---
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>{title} | 小岛手记</title>
+    <meta name="description" content={description} />
+    <meta name="theme-color" content="#fff8ef" />
+    <link rel="canonical" href={canonical} />
+    <link rel="icon" href="/assets/favicon.svg" type="image/svg+xml" />
+    <link rel="alternate" type="application/rss+xml" title="小岛手记" href="/blog/rss.xml" />
+    <meta property="og:title" content={title} />
+    <meta property="og:description" content={description} />
+    <meta property="og:type" content={article ? 'article' : 'website'} />
+    <meta property="og:url" content={canonical} />
+    {image && <meta property="og:image" content={new URL(image, Astro.site)} />}
+  </head>
+  <body class="blog-body">
+    <a class="skip" href="#main">跳到正文</a>
+    <header class="blog-header">
+      <a class="blog-brand" href="/" aria-label="返回首页">
+        <span class="blog-brand-cat" aria-hidden="true" set:html={catSVG('yume', true)} />
+        <span>小岛手记<span class="brand-period">.</span></span>
+      </a>
+      <nav aria-label="主导航"><a href="/">首页</a><a href="/blog/" aria-current={section === 'blog' ? 'page' : undefined}>Blog</a><a href="/portfolio/" aria-current={section === 'portfolio' ? 'page' : undefined}>作品集</a><a class="rss-link" href="/blog/rss.xml">RSS</a></nav>
+    </header>
+    <main id="main" class="blog-main"><slot /></main>
+    <footer class="blog-footer"><a href="/blog/">小岛手记</a><span>写下来，慢慢来。</span><a href="/">回到首页</a></footer>
+  </body>
+</html>

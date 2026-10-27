@@ -1,0 +1,15 @@
+---
+import BlogLayout from '../../../layouts/BlogLayout.astro';
+import BlogArchive from '../../../components/BlogArchive.astro';
+import { publishedPosts } from '../../../lib/blog';
+import { entryTags, tagIndex } from '../../../lib/tags';
+export async function getStaticPaths() {
+  const allPosts = await publishedPosts();
+  return tagIndex(allPosts).map(({ tag }) => ({ params: { tag }, props: { tag, allPosts, posts: allPosts.filter(post => entryTags(post).includes(tag)) } }));
+}
+const { tag, posts, allPosts } = Astro.props;
+---
+<BlogLayout title={`${tag}分类`} description={`关于${tag}的博客手记。`}>
+  <section class="taxonomy-intro"><a href="/blog/">全部手记</a><h1>{tag}<span>相关手记</span></h1><p>把相近的想法，放在一起。</p></section>
+  <BlogArchive posts={posts} allPosts={allPosts} activeTag={tag} />
+</BlogLayout>

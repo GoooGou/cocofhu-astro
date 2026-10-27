@@ -1,0 +1,19 @@
+---
+import { catSVG } from '../scripts/cats.js';
+import IslandButton from './IslandButton.astro';
+import initial from '../data/initial.json';
+---
+<div class="tapes" aria-label="白天是天才程序员 · 晚上是偷心怪盗团" data-i18n-attr="aria-label:slogan">
+      <div class="tape tape--ink"><div class="tape-track" aria-hidden="true" set:html={initial.tapes[0]} /></div>
+      <div class="tape tape--pink"><div class="tape-track tape-track--rev" aria-hidden="true" set:html={initial.tapes[1]} /></div>
+      <IslandButton  className="thief" id="thief" aria-label="怪盗猫：戳一下看预告函" data-i18n-attr="aria-label:thiefAria" aria-expanded="false">
+        <span class="thief-smear" aria-hidden="true"></span>
+        <span class="thief-body" data-cat="kaito"><Fragment set:html={catSVG('kaito', false)} /></span>
+        <span class="thief-card" aria-hidden="true"><small data-i18n="thiefKicker">预告函</small><b data-i18n="thiefMsg">怪盗已光临</b><em data-i18n="thiefSign">— 怪盗猫</em><i class="thief-hint" data-i18n="thiefHint">点开看看 →</i></span>
+      </IslandButton>
+    </div>
+
+    <a class="scroll-hint" href="#recent" data-jump aria-label="向下滚动" data-i18n-attr="aria-label:scrollAria">
+      <span>SCROLL</span>
+      <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6 9l6 6 6-6"/></svg>
+    </a>

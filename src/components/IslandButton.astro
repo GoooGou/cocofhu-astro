@@ -1,0 +1,6 @@
+---
+import { Button } from 'animal-island-ui';
+interface Props { className?: string; [key: string]: any }
+const { className = '', ...attributes } = Astro.props;
+---
+<Button type="text" htmlType="button" className={`replica-control ${className}`} {...attributes}><slot /></Button>

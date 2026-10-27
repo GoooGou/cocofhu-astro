@@ -1,0 +1,9 @@
+node_modules/
+dist/
+.astro/
+.openai/*.local.*
+.openai/*.jsonl
+*.log
+qa/*.png
+qa/*.jpg
+qa/hallmark-screenshots/

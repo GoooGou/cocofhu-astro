@@ -1,0 +1,11 @@
+---
+import BlogLayout from '../../layouts/BlogLayout.astro';
+import PortfolioGrid from '../../components/PortfolioGrid.astro';
+import { publishedProjects } from '../../lib/portfolio';
+import { catSVG } from '../../scripts/cats.js';
+const projects = await publishedProjects();
+---
+<BlogLayout title="作品集" description="从界面到实现，把想法做成能使用的东西。" section="portfolio">
+  <section class="blog-intro work-intro"><div><h1>做点<span>东西。</span></h1><p>从界面到实现，让想法有个形状。</p></div><div class="blog-doodle" aria-hidden="true"><span class="doodle-note">想到了<br />就试试看</span><span set:html={catSVG('soda', false)} /></div></section>
+  <PortfolioGrid projects={projects} allProjects={projects} />
+</BlogLayout>

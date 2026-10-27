@@ -1,0 +1,91 @@
+---
+import { catSVG } from '../scripts/cats.js';
+import initial from '../data/initial.json';
+---
+<section class="band band--recent" id="recent">
+      <div class="band-inner">
+        <div class="band-head">
+          <p class="kicker-pill reveal">✦ RECENT</p>
+          <h2 class="chapter" data-chapter="chRecent">最近在做</h2>
+          <span class="rule reveal" aria-hidden="true"></span>
+          <span class="count reveal">01 NOTES</span>
+        </div>
+        <p class="lede reveal" data-i18n="ledeRecent">看看我在做什么</p>
+
+        <ul class="cards">
+          <li class="card card--blue reveal" style="--d:0ms">
+            <div class="scene scene--visual" aria-hidden="true">
+              <div class="cube"><i></i><i></i><i></i><i></i><i></i><i></i></div>
+              <div class="raster" set:html={initial.raster} />
+              <span class="cameo" data-cat="yozora"><Fragment set:html={catSVG('yozora', false)} /></span>
+            </div>
+            <div class="card-body">
+              <div class="card-meta"><time datetime="2026">2026</time><span class="tag">VISUAL</span></div>
+              <h3 data-i18n="c1t">学习计算机图形学</h3>
+              <p data-i18n="c1p">了解一些<button type="button" class="mark">图形学<span class="bubble" role="tooltip">在学习 GAMES101-现代计算机图形学入门-闫令琪</span></button>相关的知识，学习一些<button type="button" class="mark">基础知识<span class="bubble" role="tooltip">我无法描述我的需求，看懂建模软件上的菜单那</span></button>，让 AI 帮我<button type="button" class="mark">3D 建模<span class="bubble" role="tooltip">GPT-6 在 2D 绘画上好像非常厉害，真的假的？</span></button>。</p>
+            </div>
+          </li>
+
+          <li class="card card--pink reveal" style="--d:90ms">
+            <div class="scene scene--blog" aria-hidden="true">
+              <div class="win">
+                <div class="win-bar"><span>_ □ ×</span></div>
+                <div class="win-body"><b data-i18n="welcome">欢迎光临!</b><span class="win-ok">OK</span></div>
+              </div>
+              <span class="cameo" data-cat="sakura"><Fragment set:html={catSVG('sakura', false)} /></span>
+            </div>
+            <div class="card-body">
+              <div class="card-meta"><time datetime="2026">2026</time><span class="tag">BLOG</span></div>
+              <h3 data-i18n="c2t"><a href="https://cocofhu.com" target="_blank" rel="noopener">设计一个博客主页</a></h3>
+              <p data-i18n="c2p">就是这个啦，<button type="button" class="mark">酷吧<span class="bubble" role="tooltip">花了很多时间的，中间的特效用了很多视觉模型能力</span></button>，零成本完全部署在<button type="button" class="mark">GitHub<span class="bubble" role="tooltip">准确来说是 GitHub Pages</span></button>上，我在做了一个<button type="button" class="mark">客户端<span class="bubble" role="tooltip">Mac、Windows 都支持，不过体积稍微有点大，看看怎么优化下</span></button>，可以在客户端上直接修改。</p>
+            </div>
+          </li>
+
+          <li class="card card--mint reveal" style="--d:180ms">
+            <div class="scene scene--rc" aria-hidden="true">
+              <span class="rc-track"></span>
+              <span class="rc-cone"><svg viewBox="0 0 34 36"><path d="M12 3 L22 3 L30 30 L4 30Z" fill="#ffd36e" stroke="#3b2f4a" stroke-width="3" stroke-linejoin="round"/><path d="M9.5 13 L24.5 13 L26.5 20 L7.5 20Z" fill="#fffdf9"/><rect x="1.5" y="28" width="31" height="6" rx="3" fill="#ff9db5" stroke="#3b2f4a" stroke-width="3"/></svg></span>
+              <span class="rc-car"><span class="rc-body"><svg viewBox="0 0 76 50"><ellipse cx="38" cy="45" rx="30" ry="4" fill="#3b2f4a" opacity=".15"/><path d="M12 30 Q12 16 26 15 L32 6 Q34 3 38 3 L50 3 Q55 3 57 8 L60 15 Q70 16 70 28 L70 33 Q70 36 67 36 L15 36 Q12 36 12 33Z" fill="#ffd36e" stroke="#3b2f4a" stroke-width="3" stroke-linejoin="round"/><path d="M35 8 L49 8 Q52 8 53 11 L55 16 L31 16Z" fill="#9fe3ff" stroke="#3b2f4a" stroke-width="2.5" stroke-linejoin="round"/><rect x="36" y="21" width="16" height="6" rx="3" fill="#ff9db5" stroke="#3b2f4a" stroke-width="2"/><circle cx="66" cy="24" r="2.6" fill="#fffdf9" stroke="#3b2f4a" stroke-width="2"/><line x1="20" y1="15" x2="16" y2="2" stroke="#3b2f4a" stroke-width="2.5" stroke-linecap="round"/><circle cx="16" cy="3" r="3" fill="#7c6bd6" stroke="#3b2f4a" stroke-width="2"/><g class="rc-wheel"><circle cx="24" cy="37" r="8" fill="#3b2f4a"/><circle cx="24" cy="37" r="3" fill="#e9e3ff"/></g><g class="rc-wheel"><circle cx="58" cy="37" r="8" fill="#3b2f4a"/><circle cx="58" cy="37" r="3" fill="#e9e3ff"/></g></svg></span><i class="rc-puff"></i><i class="rc-puff"></i><i class="rc-puff"></i></span>
+              <span class="cameo rc-cat" data-cat="soda"><Fragment set:html={catSVG('soda', false)} /></span>
+              <span class="rc-remote"><b></b><i></i><i></i></span>
+              <span class="rc-zoom">VROOM!</span>
+            </div>
+            <div class="card-body">
+              <div class="card-meta"><time datetime="2026">2026</time><span class="tag">HARDWARE</span></div>
+              <h3 data-i18n="c3t">AI 硬件</h3>
+              <p data-i18n="c3p">最近突然感觉软件已经玩到头了，想试试做一些 AI 硬件：<button type="button" class="mark">机械臂<span class="bubble" role="tooltip">可能太难了</span></button>、一个<button type="button" class="mark">桌面机器人<span class="bubble" role="tooltip">在我打游戏的时候告诉我攻略</span></button>。不知道 AI 在嵌入式上能不能帮我找到一些灵感。</p>
+            </div>
+          </li>
+
+          <li class="card card--yellow reveal" style="--d:270ms">
+            <div class="scene scene--game" aria-hidden="true">
+              <div class="hp"><i></i><i></i><i></i><i></i><i></i></div>
+              <span class="clear">CLEAR!</span>
+              <span class="pad"><i></i><b></b><b></b></span>
+              <span class="cameo" data-cat="itazura"><Fragment set:html={catSVG('itazura', false)} /></span>
+            </div>
+            <div class="card-body">
+              <div class="card-meta"><time datetime="2026">2026</time><span class="tag">GAME</span></div>
+              <h3 data-i18n="c4t">追番，打游戏</h3>
+              <p data-i18n="c4p">最近刚刚给<button type="button" class="mark">异度之刃2<span class="bubble" role="tooltip">我是糕手！</span></button>重制版打通关了，现在在等<button type="button" class="mark">异度之刃3<span class="bubble" role="tooltip">游戏首发买了没玩进去，这次一定通关</span></button>重制版。目前也在看一些<button type="button" class="mark">动漫<span class="bubble" role="tooltip">无职转生、恶女不才 请多关照</span></button>。</p>
+            </div>
+          </li>
+
+          <li class="card card--lav card--wide reveal" style="--d:360ms">
+            <div class="scene scene--note" aria-hidden="true">
+              <div class="paper">
+                <svg viewBox="0 0 160 110"><path class="ln l1" d="M14 26 Q40 18 66 26 T120 24 T146 26"/><path class="ln l2" d="M14 50 Q44 42 74 50 T130 48"/><path class="ln l3" d="M14 74 Q36 66 58 74 T100 72"/><path class="ln l4" d="M14 96 Q28 90 44 96"/></svg>
+                <span class="pencil"></span>
+              </div>
+              <span class="cameo" data-cat="nemu"><Fragment set:html={catSVG('nemu', false)} /></span>
+            </div>
+            <div class="card-body">
+              <div class="card-meta"><time datetime="2026">2026</time><span class="tag">NOTE</span></div>
+              <h3 data-i18n="c5t">作为人类写点什么</h3>
+              <a class="blog-entry-link" href="/blog/">阅读博客 / Blog</a>
+              <p data-i18n="c5p"><button type="button" class="mark">写点什么<span class="bubble" role="tooltip">我在读书的那个时候还写博客的，好久没写了</span></button>，在各大博客网站投稿下。</p>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </section>

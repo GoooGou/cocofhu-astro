@@ -1,0 +1,259 @@
+<!doctype html>
+<html lang="zh-CN" class="no-js">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>cocofhu的主页 — 闪耀扣扣的主页</title>
+  <meta name="description" content="cocofhu 的个人主页：99年，INTP，后端研发。白天是天才程序员 · 晚上是偷心怪盗团。">
+  <meta name="theme-color" content="#3b2f4a">
+  <link rel="icon" href="assets/favicon.svg?v=d5376924" type="image/svg+xml">
+  <link rel="preload" href="assets/fredoka.woff2?v=aba35163" as="font" type="font/woff2" crossorigin>
+  <link rel="stylesheet" href="assets/style.css?v=642a0764">
+  <script>document.documentElement.classList.replace('no-js','js');</script>
+</head>
+<body>
+  <a class="skip" href="#main" data-i18n="skip">跳到正文</a>
+
+  <!-- ============ intro / loading ============ -->
+  <div class="intro" id="intro" aria-hidden="true">
+    <div class="intro-stage">
+      <div class="intro-word" id="introWord"></div>
+      <div class="intro-load"><span class="intro-bar"><i></i></span><span class="intro-txt">LOADING</span></div>
+    </div>
+    <span class="intro-seam"></span>
+    <span class="cur cur-l"></span>
+    <span class="cur cur-r"></span>
+  </div>
+
+  <!-- wipe used for in-page jumps -->
+  <div class="wipe" id="wipe" aria-hidden="true"></div>
+
+  <header class="top" id="top">
+    <a class="logo" href="#main" aria-label="cocofhu 首页" data-i18n-attr="aria-label:logoAria">
+      <span class="logo-cat" data-cat="yume" data-mini></span>
+      <span class="logo-txt">cocofhu<b>.</b></span>
+    </a>
+    <nav class="nav" aria-label="页面导航" data-i18n-attr="aria-label:navAria">
+      <a class="nav-a" href="#recent" data-jump data-i18n="navRecent">最近在做</a>
+      <a class="nav-a" href="#about" data-jump data-i18n="navAbout">关于我</a>
+      <button type="button" class="lang" id="langBtn" aria-label="切换语言 / Switch language"><span data-l="zh" lang="zh-CN">中</span><i aria-hidden="true">/</i><span data-l="en" lang="en">EN</span></button>
+      <a class="pill pill--ink" href="https://github.com/cocofhu" target="_blank" rel="noopener">GitHub <svg class="ext" viewBox="0 0 16 16" aria-hidden="true"><path d="M6 3h7v7M13 3L4 12"/></svg></a>
+    </nav>
+  </header>
+
+  <main id="main">
+    <!-- ============ hero ============ -->
+    <section class="hero" id="hero">
+      <div class="hero-copy">
+        <p class="kicker pop" style="--d:0ms" data-i18n="kicker"><span class="spark">✦</span> HELLO · 闪耀扣扣的主页</p>
+        <h1 class="title" aria-label="cocofhu">
+          <span class="tbox" style="--i:0;--c:var(--pink)">c</span><span class="tbox" style="--i:1;--c:var(--lav)">o</span><span class="tbox" style="--i:2;--c:var(--mint)">c</span><span class="tbox" style="--i:3;--c:var(--yellow)">o</span><span class="tbox" style="--i:4;--c:var(--blue)">f</span><span class="tbox" style="--i:5;--c:var(--pink)">h</span><span class="tbox" style="--i:6;--c:var(--lav)">u</span>
+        </h1>
+        <p class="intro-p pop" style="--d:420ms" data-i18n="intro">
+          Hello，大家好，我是 cocofhu。<br>
+          <strong>99年</strong>，<strong>INTP</strong>，<strong>后端研发</strong>。目前负责
+          <button type="button" class="mark">SkillHub<span class="bubble" role="tooltip">面向中国用户的 AI Skills 社区</span></button>
+          产品研发，也在探索
+          <button type="button" class="mark">AI Harness<span class="bubble" role="tooltip">让人和 Agent 更好协作的工作流</span></button>
+          ——想做有趣、好用的产品，帮到更多人，也和大家一起进步。
+        </p>
+        <div class="chips pop" style="--d:560ms">
+          <span class="chip" data-i18n="tag1">分布式系统</span><span class="chip" data-i18n="tag2">存储</span><span class="chip" data-i18n="tag3">基础设施</span>
+        </div>
+        <div class="ctas pop" style="--d:680ms">
+          <a class="pill pill--ink pill--lg" href="https://github.com/cocofhu" target="_blank" rel="noopener">github.com/cocofhu <svg class="ext" viewBox="0 0 16 16" aria-hidden="true"><path d="M6 3h7v7M13 3L4 12"/></svg></a>
+        </div>
+      </div>
+
+      <div class="hero-stage pop" style="--d:120ms">
+        <div class="stage-card">
+          <span class="live"><span class="live-dot"></span><b>LIVE</b></span>
+          <span class="est">EST. 2026</span>
+          <span class="st st1"></span><span class="st st2"></span><span class="st st3"></span><span class="st st4"></span>
+          <button type="button" class="hero-cat" id="heroCat" aria-label="戳一下小幽灵猫" data-i18n-attr="aria-label:catAria">
+            <span class="say" id="heroSay">你好呀~</span>
+            <span data-cat="yume" data-big></span>
+          </button>
+          <span class="hero-shadow"></span>
+          <p class="stage-hint" data-i18n="hint">点我 · 戳戳看</p>
+        </div>
+      </div>
+    </section>
+
+    <div class="tapes" aria-label="白天是天才程序员 · 晚上是偷心怪盗团" data-i18n-attr="aria-label:slogan">
+      <div class="tape tape--ink"><div class="tape-track" aria-hidden="true"></div></div>
+      <div class="tape tape--pink"><div class="tape-track tape-track--rev" aria-hidden="true"></div></div>
+      <button type="button" class="thief" id="thief" aria-label="怪盗猫：戳一下看预告函" data-i18n-attr="aria-label:thiefAria" aria-expanded="false">
+        <span class="thief-smear" aria-hidden="true"></span>
+        <span class="thief-body" data-cat="kaito"></span>
+        <span class="thief-card" aria-hidden="true"><small data-i18n="thiefKicker">预告函</small><b data-i18n="thiefMsg">怪盗已光临</b><em data-i18n="thiefSign">— 怪盗猫</em><i class="thief-hint" data-i18n="thiefHint">点开看看 →</i></span>
+      </button>
+    </div>
+
+    <a class="scroll-hint" href="#recent" data-jump aria-label="向下滚动" data-i18n-attr="aria-label:scrollAria">
+      <span>SCROLL</span>
+      <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6 9l6 6 6-6"/></svg>
+    </a>
+
+    <!-- ============ recent ============ -->
+    <section class="band band--recent" id="recent">
+      <div class="band-inner">
+        <div class="band-head">
+          <p class="kicker-pill reveal">✦ RECENT</p>
+          <h2 class="chapter" data-chapter="chRecent">最近在做</h2>
+          <span class="rule reveal" aria-hidden="true"></span>
+          <span class="count reveal">01 NOTES</span>
+        </div>
+        <p class="lede reveal" data-i18n="ledeRecent">看看我在做什么</p>
+
+        <ul class="cards">
+          <li class="card card--blue reveal" style="--d:0ms">
+            <div class="scene scene--visual" aria-hidden="true">
+              <div class="cube"><i></i><i></i><i></i><i></i><i></i><i></i></div>
+              <div class="raster"></div>
+              <span class="cameo" data-cat="yozora"></span>
+            </div>
+            <div class="card-body">
+              <div class="card-meta"><time datetime="2026">2026</time><span class="tag">VISUAL</span></div>
+              <h3 data-i18n="c1t">学习计算机图形学</h3>
+              <p data-i18n="c1p">了解一些<button type="button" class="mark">图形学<span class="bubble" role="tooltip">在学习 GAMES101-现代计算机图形学入门-闫令琪</span></button>相关的知识，学习一些<button type="button" class="mark">基础知识<span class="bubble" role="tooltip">我无法描述我的需求，看懂建模软件上的菜单那</span></button>，让 AI 帮我<button type="button" class="mark">3D 建模<span class="bubble" role="tooltip">GPT-6 在 2D 绘画上好像非常厉害，真的假的？</span></button>。</p>
+            </div>
+          </li>
+
+          <li class="card card--pink reveal" style="--d:90ms">
+            <div class="scene scene--blog" aria-hidden="true">
+              <div class="win">
+                <div class="win-bar"><span>_ □ ×</span></div>
+                <div class="win-body"><b data-i18n="welcome">欢迎光临!</b><span class="win-ok">OK</span></div>
+              </div>
+              <span class="cameo" data-cat="sakura"></span>
+            </div>
+            <div class="card-body">
+              <div class="card-meta"><time datetime="2026">2026</time><span class="tag">BLOG</span></div>
+              <h3 data-i18n="c2t"><a href="https://cocofhu.com" target="_blank" rel="noopener">设计一个博客主页</a></h3>
+              <p data-i18n="c2p">就是这个啦，<button type="button" class="mark">酷吧<span class="bubble" role="tooltip">花了很多时间的，中间的特效用了很多视觉模型能力</span></button>，零成本完全部署在<button type="button" class="mark">GitHub<span class="bubble" role="tooltip">准确来说是 GitHub Pages</span></button>上，我在做了一个<button type="button" class="mark">客户端<span class="bubble" role="tooltip">Mac、Windows 都支持，不过体积稍微有点大，看看怎么优化下</span></button>，可以在客户端上直接修改。</p>
+            </div>
+          </li>
+
+          <li class="card card--mint reveal" style="--d:180ms">
+            <div class="scene scene--rc" aria-hidden="true">
+              <span class="rc-track"></span>
+              <span class="rc-cone"><svg viewBox="0 0 34 36"><path d="M12 3 L22 3 L30 30 L4 30Z" fill="#ffd36e" stroke="#3b2f4a" stroke-width="3" stroke-linejoin="round"/><path d="M9.5 13 L24.5 13 L26.5 20 L7.5 20Z" fill="#fffdf9"/><rect x="1.5" y="28" width="31" height="6" rx="3" fill="#ff9db5" stroke="#3b2f4a" stroke-width="3"/></svg></span>
+              <span class="rc-car"><span class="rc-body"><svg viewBox="0 0 76 50"><ellipse cx="38" cy="45" rx="30" ry="4" fill="#3b2f4a" opacity=".15"/><path d="M12 30 Q12 16 26 15 L32 6 Q34 3 38 3 L50 3 Q55 3 57 8 L60 15 Q70 16 70 28 L70 33 Q70 36 67 36 L15 36 Q12 36 12 33Z" fill="#ffd36e" stroke="#3b2f4a" stroke-width="3" stroke-linejoin="round"/><path d="M35 8 L49 8 Q52 8 53 11 L55 16 L31 16Z" fill="#9fe3ff" stroke="#3b2f4a" stroke-width="2.5" stroke-linejoin="round"/><rect x="36" y="21" width="16" height="6" rx="3" fill="#ff9db5" stroke="#3b2f4a" stroke-width="2"/><circle cx="66" cy="24" r="2.6" fill="#fffdf9" stroke="#3b2f4a" stroke-width="2"/><line x1="20" y1="15" x2="16" y2="2" stroke="#3b2f4a" stroke-width="2.5" stroke-linecap="round"/><circle cx="16" cy="3" r="3" fill="#7c6bd6" stroke="#3b2f4a" stroke-width="2"/><g class="rc-wheel"><circle cx="24" cy="37" r="8" fill="#3b2f4a"/><circle cx="24" cy="37" r="3" fill="#e9e3ff"/></g><g class="rc-wheel"><circle cx="58" cy="37" r="8" fill="#3b2f4a"/><circle cx="58" cy="37" r="3" fill="#e9e3ff"/></g></svg></span><i class="rc-puff"></i><i class="rc-puff"></i><i class="rc-puff"></i></span>
+              <span class="cameo rc-cat" data-cat="soda"></span>
+              <span class="rc-remote"><b></b><i></i><i></i></span>
+              <span class="rc-zoom">VROOM!</span>
+            </div>
+            <div class="card-body">
+              <div class="card-meta"><time datetime="2026">2026</time><span class="tag">HARDWARE</span></div>
+              <h3 data-i18n="c3t">AI 硬件</h3>
+              <p data-i18n="c3p">最近突然感觉软件已经玩到头了，想试试做一些 AI 硬件：<button type="button" class="mark">机械臂<span class="bubble" role="tooltip">可能太难了</span></button>、一个<button type="button" class="mark">桌面机器人<span class="bubble" role="tooltip">在我打游戏的时候告诉我攻略</span></button>。不知道 AI 在嵌入式上能不能帮我找到一些灵感。</p>
+            </div>
+          </li>
+
+          <li class="card card--yellow reveal" style="--d:270ms">
+            <div class="scene scene--game" aria-hidden="true">
+              <div class="hp"><i></i><i></i><i></i><i></i><i></i></div>
+              <span class="clear">CLEAR!</span>
+              <span class="pad"><i></i><b></b><b></b></span>
+              <span class="cameo" data-cat="itazura"></span>
+            </div>
+            <div class="card-body">
+              <div class="card-meta"><time datetime="2026">2026</time><span class="tag">GAME</span></div>
+              <h3 data-i18n="c4t">追番，打游戏</h3>
+              <p data-i18n="c4p">最近刚刚给<button type="button" class="mark">异度之刃2<span class="bubble" role="tooltip">我是糕手！</span></button>重制版打通关了，现在在等<button type="button" class="mark">异度之刃3<span class="bubble" role="tooltip">游戏首发买了没玩进去，这次一定通关</span></button>重制版。目前也在看一些<button type="button" class="mark">动漫<span class="bubble" role="tooltip">无职转生、恶女不才 请多关照</span></button>。</p>
+            </div>
+          </li>
+
+          <li class="card card--lav card--wide reveal" style="--d:360ms">
+            <div class="scene scene--note" aria-hidden="true">
+              <div class="paper">
+                <svg viewBox="0 0 160 110"><path class="ln l1" d="M14 26 Q40 18 66 26 T120 24 T146 26"/><path class="ln l2" d="M14 50 Q44 42 74 50 T130 48"/><path class="ln l3" d="M14 74 Q36 66 58 74 T100 72"/><path class="ln l4" d="M14 96 Q28 90 44 96"/></svg>
+                <span class="pencil"></span>
+              </div>
+              <span class="cameo" data-cat="nemu"></span>
+            </div>
+            <div class="card-body">
+              <div class="card-meta"><time datetime="2026">2026</time><span class="tag">NOTE</span></div>
+              <h3 data-i18n="c5t">作为人类写点什么</h3>
+              <p data-i18n="c5p"><button type="button" class="mark">写点什么<span class="bubble" role="tooltip">我在读书的那个时候还写博客的，好久没写了</span></button>，在各大博客网站投稿下。</p>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- ============ about ============ -->
+    <section class="band band--about" id="about">
+      <div class="band-inner">
+        <div class="band-head">
+          <p class="kicker-pill reveal">✦ ABOUT</p>
+          <h2 class="chapter" data-chapter="chAbout">关于我</h2>
+          <span class="rule reveal" aria-hidden="true"></span>
+          <span class="count reveal">ME</span>
+        </div>
+        <p class="lede reveal" data-i18n="ledeAbout">滑到这里打个招呼</p>
+
+        <div class="about">
+          <div class="about-box reveal">
+            <figure class="kq">
+              <blockquote class="kq-bubble"><p class="mystery" data-i18n="mystery">老实写代码，一定很枯燥吧</p></blockquote>
+              <figcaption class="kq-by" data-i18n="mysteryBy">— 久留美猫</figcaption>
+            </figure>
+            <span class="kq-tag" data-i18n="kqTag"><button type="button" class="mark">125倍杠杆梭哈<span class="bubble" role="tooltip">快去看 FX戦士くるみちゃん</span></button></span>
+            <svg class="kq-chart" viewBox="0 0 150 90" aria-hidden="true"><path class="kq-grid" d="M0 22H150M0 45H150M0 68H150"/><g class="kq-c" style="--i:0"><path d="M12 30V70"/><rect x="6" y="40" width="12" height="22" class="up"/></g><g class="kq-c" style="--i:1"><path d="M32 22V62"/><rect x="26" y="30" width="12" height="20" class="dn"/></g><g class="kq-c" style="--i:2"><path d="M52 34V76"/><rect x="46" y="44" width="12" height="24" class="dn"/></g><g class="kq-c" style="--i:3"><path d="M72 18V60"/><rect x="66" y="26" width="12" height="26" class="up"/></g><g class="kq-c" style="--i:4"><path d="M92 8V44"/><rect x="86" y="14" width="12" height="20" class="up"/></g><g class="kq-c" style="--i:5"><path d="M112 20V58"/><rect x="106" y="26" width="12" height="22" class="dn"/></g><g class="kq-c" style="--i:6"><path d="M132 4V36"/><rect x="126" y="8" width="12" height="18" class="up"/></g></svg>
+            <span class="peek" id="peek" data-cat="kurumi"></span>
+          </div>
+          <div class="links">
+            <a class="link-card reveal" style="--d:80ms" href="https://github.com/cocofhu" target="_blank" rel="noopener">
+              <span class="link-ico"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2a10 10 0 0 0-3.2 19.5c.5.1.7-.2.7-.5v-1.7c-2.8.6-3.4-1.3-3.4-1.3-.4-1.2-1.1-1.5-1.1-1.5-.9-.6.1-.6.1-.6 1 .1 1.5 1 1.5 1 .9 1.5 2.4 1.1 2.9.8.1-.6.4-1.1.6-1.3-2.2-.3-4.6-1.1-4.6-5 0-1.1.4-2 1-2.7-.1-.3-.4-1.3.1-2.7 0 0 .8-.3 2.8 1a9.6 9.6 0 0 1 5 0c1.9-1.3 2.8-1 2.8-1 .5 1.4.2 2.4.1 2.7.6.7 1 1.6 1 2.7 0 3.9-2.4 4.7-4.6 5 .4.3.7.9.7 1.9V21c0 .3.2.6.7.5A10 10 0 0 0 12 2z"/></svg></span>
+              <span><b>GitHub</b><small>github.com/cocofhu</small></span>
+              <svg class="ext" viewBox="0 0 16 16" aria-hidden="true"><path d="M6 3h7v7M13 3L4 12"/></svg>
+            </a>
+            <a class="link-card link-card--pink reveal" style="--d:160ms" href="https://github.com/cocofhu/grasp" target="_blank" rel="noopener">
+              <span class="link-ico link-ico--g">G</span>
+              <span><b>Grasp</b><small data-i18n="graspSub">多个 coding agent 的可视化工作流 · 开源</small></span>
+              <svg class="ext" viewBox="0 0 16 16" aria-hidden="true"><path d="M6 3h7v7M13 3L4 12"/></svg>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="foot">
+    <div class="foot-cats" aria-hidden="true">
+      <span data-cat="yozora"></span><span data-cat="sakura"></span><span data-cat="yume"></span><span data-cat="nemu"></span><span data-cat="itazura"></span><span data-cat="soda"></span>
+    </div>
+    <div class="foot-bar">
+      <p data-i18n="slogan">白天是天才程序员 · 晚上是偷心怪盗团</p>
+      <p class="foot-small" data-i18n="footSmall">© 2026 cocofhu · 分布式系统 · 存储 · 基础设施</p>
+    </div>
+  </footer>
+
+  <!-- scroll buddy -->
+  <button type="button" class="buddy" id="buddy" aria-label="回到顶部" data-i18n-attr="aria-label:buddyAria">
+    <span class="buddy-say" id="buddySay"></span>
+    <span class="buddy-body" id="buddyBody" data-cat="yume"></span>
+  </button>
+
+  <!-- full calling card (预告信) -->
+  <div class="cc" id="cc" role="dialog" aria-modal="true" aria-labelledby="ccTitle" aria-describedby="ccText" hidden>
+    <div class="cc-backdrop" data-cc-close></div>
+    <div class="cc-wrap">
+      <div class="cc-card">
+        <div class="cc-face">
+          <button type="button" class="cc-x" data-cc-close aria-label="关闭" data-i18n-attr="aria-label:ccClose">×</button>
+          <span class="cc-emblem" aria-hidden="true"><span data-cat="kaito" data-mini></span></span>
+          <h2 class="cc-title" id="ccTitle"><span class="cc-vh" id="ccTitleText">预告信</span><span class="cc-title-rn" aria-hidden="true"></span></h2>
+          <div class="cc-body" aria-hidden="true"></div>
+          <p class="cc-vh" id="ccText"></p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="assets/main.js?v=85aee5de"></script>
+</body>
+</html>
+

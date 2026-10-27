@@ -1,0 +1,13 @@
+/* The genuine package stylesheet is imported once, in a low-priority layer.
+   Reference styling intentionally takes precedence for the requested replica. */
+@import 'animal-island-ui/style' layer(animal);
+
+:root {
+  --animal-font-family: var(--f-en), var(--f-zh);
+  --animal-text-color: var(--ink);
+  --animal-primary-color: var(--ink);
+  --animal-bg-color: var(--cream);
+  --animal-bg-color-secondary: var(--paper);
+}
+.replica-control { all: unset; box-sizing: border-box; cursor: pointer; }
+.replica-control > span, .replica-control astro-slot { display: contents; }

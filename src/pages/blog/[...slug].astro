@@ -1,0 +1,23 @@
+---
+import { render, type CollectionEntry } from 'astro:content';
+import BlogLayout from '../../layouts/BlogLayout.astro';
+import { publishedPosts, categories, dateLabel } from '../../lib/blog';
+import { tagHref } from '../../lib/tags';
+export async function getStaticPaths() {
+  const posts = await publishedPosts();
+  return posts.map((post, index) => ({ params: { slug: post.id }, props: { post, next: posts[index + 1] ?? posts[index - 1] } }));
+}
+interface Props { post: CollectionEntry<'posts'>; next?: CollectionEntry<'posts'>; }
+const { post, next } = Astro.props;
+const { Content } = await render(post);
+---
+<BlogLayout title={post.data.title} description={post.data.excerpt} article image={post.data.cover}>
+  <div class="article-top"><a href="/blog/">全部手记</a><a class="category-link" href={tagHref('blog', categories[post.data.category])}>{categories[post.data.category]}</a></div>
+  <article class="article-sheet">
+    <header class="article-heading"><time datetime={post.data.publishedAt.toISOString().slice(0, 10)}>{dateLabel(post.data.publishedAt)}</time><h1>{post.data.title}</h1><p>{post.data.excerpt}</p><ul class="post-tags" aria-label="文章标签">{post.data.tags.map(tag => <li><a href={tagHref('blog', tag)}>{tag}</a></li>)}</ul></header>
+    {post.data.cover && <figure class="article-cover"><img src={post.data.cover} alt={post.data.coverAlt} width="1200" height="800" /></figure>}
+    <div class="article-prose"><Content /></div>
+    <footer class="article-end"><svg aria-hidden="true" viewBox="0 0 32 32"><path d="M16 3v26M3 16h26M7 7l18 18M7 25 25 7" /></svg><p>这篇就写到这里。</p><a href="/blog/">回到手记列表</a></footer>
+  </article>
+  {next && <aside class="read-next"><p>再翻一篇</p><a href={`/blog/${next.id}/`}>{next.data.title}</a></aside>}
+</BlogLayout>

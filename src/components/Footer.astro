@@ -1,0 +1,13 @@
+---
+import { catSVG } from '../scripts/cats.js';
+---
+<footer class="foot">
+    <div class="foot-cats" aria-hidden="true">
+      <span data-cat="yozora"><Fragment set:html={catSVG('yozora', false)} /></span><span data-cat="sakura"><Fragment set:html={catSVG('sakura', false)} /></span><span data-cat="yume"><Fragment set:html={catSVG('yume', false)} /></span><span data-cat="nemu"><Fragment set:html={catSVG('nemu', false)} /></span><span data-cat="itazura"><Fragment set:html={catSVG('itazura', false)} /></span><span data-cat="soda"><Fragment set:html={catSVG('soda', false)} /></span>
+    </div>
+    <div class="foot-bar">
+      <a class="blog-entry-link" href="/blog/">小岛手记 / Blog</a>
+      <p data-i18n="slogan">白天是天才程序员 · 晚上是偷心怪盗团</p>
+      <p class="foot-small" data-i18n="footSmall">© 2026 cocofhu · 分布式系统 · 存储 · 基础设施</p>
+    </div>
+  </footer>

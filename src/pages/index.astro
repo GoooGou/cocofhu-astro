@@ -1,0 +1,89 @@
+---
+import "../styles/library.css";
+import "../styles/reference.css";
+import "../styles/polish.css";
+import Intro from "../components/Intro.astro";
+import Header from "../components/Header.astro";
+import Hero from "../components/Hero.astro";
+import Tapes from "../components/Tapes.astro";
+import Recent from "../components/Recent.astro";
+import About from "../components/About.astro";
+import Footer from "../components/Footer.astro";
+import Overlays from "../components/Overlays.astro";
+import IslandButton from "../components/IslandButton.astro";
+---
+
+<!doctype html>
+<html lang="zh-CN" class="no-js">
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, viewport-fit=cover"
+    />
+    <title>王侃 GoooGou — 设计师 · 前端工程师 · 3D 造型与结构</title>
+    <meta
+      name="description"
+      content="王侃，设计工程师。从 Blender 造型、UG/NX 与 Rhino 结构设计，到前端工程实现与产品级渲染，做从想法到实物的完整表达。"
+    />
+    <meta
+      name="keywords"
+      content="王侃, GoooGou, 设计师, 前端工程师, Blender, UG NX, Rhino, 结构设计, 3D 渲染, 产品渲染"
+    />
+    <meta name="author" content="王侃 (GoooGou)" />
+    <meta name="theme-color" content="#3b2f4a" />
+    <meta
+      property="og:title"
+      content="王侃 GoooGou — 设计师 · 前端工程师 · 3D 造型与结构"
+    />
+    <meta
+      property="og:description"
+      content="设计工程师，做从 Blender 造型、UG/NX 与 Rhino 结构设计，到前端实现与产品级渲染的完整表达。"
+    />
+    <meta property="og:type" content="website" />
+    <link rel="icon" href="/assets/favicon.svg" type="image/svg+xml" />
+    <link
+      rel="preload"
+      href="/assets/fredoka.woff2"
+      as="font"
+      type="font/woff2"
+      crossorigin
+    />
+  </head>
+  <body>
+    <a class="skip" href="#main" data-i18n="skip">跳到正文</a>
+    <Intro />
+    <Header />
+    <main id="main">
+      <Hero />
+      <Tapes />
+      <Recent />
+      <About />
+    </main>
+    <Footer />
+    <Overlays />
+    <IslandButton
+      className="motion-toggle"
+      id="motionToggle"
+      aria-label="暂停动画 / Pause animations"
+      aria-pressed="false"><span aria-hidden="true">Ⅱ</span></IslandButton
+    >
+    <script>
+      import "../scripts/page.js";
+      const toggle = document.getElementById("motionToggle");
+      toggle?.addEventListener("click", () => {
+        const paused =
+          document.documentElement.classList.toggle("motion-paused");
+        toggle.setAttribute("aria-pressed", String(paused));
+        toggle.setAttribute(
+          "aria-label",
+          paused
+            ? "继续动画 / Resume animations"
+            : "暂停动画 / Pause animations",
+        );
+        const icon = toggle.querySelector("[aria-hidden]");
+        if (icon) icon.textContent = paused ? "▷" : "Ⅱ";
+      });
+    </script>
+  </body>
+</html>

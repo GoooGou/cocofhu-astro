@@ -1,0 +1,25 @@
+---
+import { catSVG } from '../scripts/cats.js';
+import IslandButton from './IslandButton.astro';
+---
+<!-- scroll buddy -->
+  <IslandButton  className="buddy" id="buddy" aria-label="回到顶部" data-i18n-attr="aria-label:buddyAria">
+    <span class="buddy-say" id="buddySay"></span>
+    <span class="buddy-body" id="buddyBody" data-cat="yume"><Fragment set:html={catSVG('yume', false)} /></span>
+  </IslandButton>
+
+  <!-- full calling card (预告信) -->
+  <div class="cc" id="cc" role="dialog" aria-modal="true" aria-labelledby="ccTitle" aria-describedby="ccText" hidden>
+    <div class="cc-backdrop" data-cc-close></div>
+    <div class="cc-wrap">
+      <div class="cc-card">
+        <div class="cc-face">
+          <IslandButton  className="cc-x" data-cc-close aria-label="关闭" data-i18n-attr="aria-label:ccClose">×</IslandButton>
+          <span class="cc-emblem" aria-hidden="true"><span data-cat="kaito" data-mini><Fragment set:html={catSVG('kaito', true)} /></span></span>
+          <h2 class="cc-title" id="ccTitle"><span class="cc-vh" id="ccTitleText">预告信</span><span class="cc-title-rn" aria-hidden="true"></span></h2>
+          <div class="cc-body" aria-hidden="true"></div>
+          <p class="cc-vh" id="ccText"></p>
+        </div>
+      </div>
+    </div>
+  </div>

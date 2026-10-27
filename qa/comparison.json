@@ -1,0 +1,168 @@
+{
+  "original": {
+    ".hero": {
+      "x": 120,
+      "y": 0,
+      "width": 1200,
+      "height": 770,
+      "font": "16px / 28px Fredoka, Nunito, \"Varela Round\", ui-rounded, system-ui, sans-serif, \"PingFang SC\", \"Hiragino Sans GB\", \"Noto Sans SC\", \"Noto Sans CJK SC\", \"Microsoft YaHei\", sans-serif",
+      "fontFamily": "Fredoka, Nunito, \"Varela Round\", ui-rounded, system-ui, sans-serif, \"PingFang SC\", \"Hiragino Sans GB\", \"Noto Sans SC\", \"Noto Sans CJK SC\", \"Microsoft YaHei\", sans-serif",
+      "letterSpacing": "normal"
+    },
+    ".hero-copy": {
+      "x": 168,
+      "y": 210.171875,
+      "width": 576.09375,
+      "height": 419.65625,
+      "font": "16px / 28px Fredoka, Nunito, \"Varela Round\", ui-rounded, system-ui, sans-serif, \"PingFang SC\", \"Hiragino Sans GB\", \"Noto Sans SC\", \"Noto Sans CJK SC\", \"Microsoft YaHei\", sans-serif",
+      "fontFamily": "Fredoka, Nunito, \"Varela Round\", ui-rounded, system-ui, sans-serif, \"PingFang SC\", \"Hiragino Sans GB\", \"Noto Sans SC\", \"Noto Sans CJK SC\", \"Microsoft YaHei\", sans-serif",
+      "letterSpacing": "normal"
+    },
+    ".title": {
+      "x": 168,
+      "y": 259.171875,
+      "width": 576.09375,
+      "height": 86.65625,
+      "font": "700 73.44px / 73.44px Fredoka, Nunito, \"Varela Round\", ui-rounded, system-ui, sans-serif",
+      "fontFamily": "Fredoka, Nunito, \"Varela Round\", ui-rounded, system-ui, sans-serif",
+      "letterSpacing": "normal"
+    },
+    ".intro-p": {
+      "x": 168,
+      "y": 369.828125,
+      "width": 576.09375,
+      "height": 140,
+      "font": "17px / 34px \"PingFang SC\", \"Hiragino Sans GB\", \"Noto Sans SC\", \"Noto Sans CJK SC\", \"Microsoft YaHei\", sans-serif",
+      "fontFamily": "\"PingFang SC\", \"Hiragino Sans GB\", \"Noto Sans SC\", \"Noto Sans CJK SC\", \"Microsoft YaHei\", sans-serif",
+      "letterSpacing": "normal"
+    },
+    ".stage-card": {
+      "x": 800.09375,
+      "y": 195.84375,
+      "width": 448.296875,
+      "height": 448.296875,
+      "font": "16px / 28px Fredoka, Nunito, \"Varela Round\", ui-rounded, system-ui, sans-serif, \"PingFang SC\", \"Hiragino Sans GB\", \"Noto Sans SC\", \"Noto Sans CJK SC\", \"Microsoft YaHei\", sans-serif",
+      "fontFamily": "Fredoka, Nunito, \"Varela Round\", ui-rounded, system-ui, sans-serif, \"PingFang SC\", \"Hiragino Sans GB\", \"Noto Sans SC\", \"Noto Sans CJK SC\", \"Microsoft YaHei\", sans-serif",
+      "letterSpacing": "normal"
+    },
+    ".hero-cat": {
+      "x": 860.5859375,
+      "y": 249.7899932861328,
+      "width": 327.296875,
+      "height": 327.296875,
+      "font": "16px / 28px Fredoka, Nunito, \"Varela Round\", ui-rounded, system-ui, sans-serif, \"PingFang SC\", \"Hiragino Sans GB\", \"Noto Sans SC\", \"Noto Sans CJK SC\", \"Microsoft YaHei\", sans-serif",
+      "fontFamily": "Fredoka, Nunito, \"Varela Round\", ui-rounded, system-ui, sans-serif, \"PingFang SC\", \"Hiragino Sans GB\", \"Noto Sans SC\", \"Noto Sans CJK SC\", \"Microsoft YaHei\", sans-serif",
+      "letterSpacing": "normal"
+    },
+    ".chip": {
+      "x": 168,
+      "y": 527.828125,
+      "width": 91.609375,
+      "height": 32,
+      "font": "700 12px / 12px \"PingFang SC\", \"Hiragino Sans GB\", \"Noto Sans SC\", \"Noto Sans CJK SC\", \"Microsoft YaHei\", sans-serif",
+      "fontFamily": "\"PingFang SC\", \"Hiragino Sans GB\", \"Noto Sans SC\", \"Noto Sans CJK SC\", \"Microsoft YaHei\", sans-serif",
+      "letterSpacing": "0.72px"
+    },
+    ".nav": {
+      "x": 1017.015625,
+      "y": 20,
+      "width": 382.984375,
+      "height": 40,
+      "font": "16px / 28px Fredoka, Nunito, \"Varela Round\", ui-rounded, system-ui, sans-serif, \"PingFang SC\", \"Hiragino Sans GB\", \"Noto Sans SC\", \"Noto Sans CJK SC\", \"Microsoft YaHei\", sans-serif",
+      "fontFamily": "Fredoka, Nunito, \"Varela Round\", ui-rounded, system-ui, sans-serif, \"PingFang SC\", \"Hiragino Sans GB\", \"Noto Sans SC\", \"Noto Sans CJK SC\", \"Microsoft YaHei\", sans-serif",
+      "letterSpacing": "normal"
+    },
+    ".logo": {
+      "x": 40,
+      "y": 16,
+      "width": 156.953125,
+      "height": 48,
+      "font": "16px / 28px Fredoka, Nunito, \"Varela Round\", ui-rounded, system-ui, sans-serif, \"PingFang SC\", \"Hiragino Sans GB\", \"Noto Sans SC\", \"Noto Sans CJK SC\", \"Microsoft YaHei\", sans-serif",
+      "fontFamily": "Fredoka, Nunito, \"Varela Round\", ui-rounded, system-ui, sans-serif, \"PingFang SC\", \"Hiragino Sans GB\", \"Noto Sans SC\", \"Noto Sans CJK SC\", \"Microsoft YaHei\", sans-serif",
+      "letterSpacing": "normal"
+    }
+  },
+  "replica": {
+    ".hero": {
+      "x": 120,
+      "y": 0,
+      "width": 1200,
+      "height": 770,
+      "font": "16px / 28px Fredoka, Nunito, \"Varela Round\", ui-rounded, system-ui, sans-serif, \"PingFang SC\", \"Hiragino Sans GB\", \"Noto Sans SC\", \"Noto Sans CJK SC\", \"Microsoft YaHei\", sans-serif",
+      "fontFamily": "Fredoka, Nunito, \"Varela Round\", ui-rounded, system-ui, sans-serif, \"PingFang SC\", \"Hiragino Sans GB\", \"Noto Sans SC\", \"Noto Sans CJK SC\", \"Microsoft YaHei\", sans-serif",
+      "letterSpacing": "normal"
+    },
+    ".hero-copy": {
+      "x": 168,
+      "y": 210.171875,
+      "width": 576.09375,
+      "height": 419.65625,
+      "font": "16px / 28px Fredoka, Nunito, \"Varela Round\", ui-rounded, system-ui, sans-serif, \"PingFang SC\", \"Hiragino Sans GB\", \"Noto Sans SC\", \"Noto Sans CJK SC\", \"Microsoft YaHei\", sans-serif",
+      "fontFamily": "Fredoka, Nunito, \"Varela Round\", ui-rounded, system-ui, sans-serif, \"PingFang SC\", \"Hiragino Sans GB\", \"Noto Sans SC\", \"Noto Sans CJK SC\", \"Microsoft YaHei\", sans-serif",
+      "letterSpacing": "normal"
+    },
+    ".title": {
+      "x": 168,
+      "y": 259.171875,
+      "width": 576.09375,
+      "height": 86.65625,
+      "font": "700 73.44px / 73.44px Fredoka, Nunito, \"Varela Round\", ui-rounded, system-ui, sans-serif",
+      "fontFamily": "Fredoka, Nunito, \"Varela Round\", ui-rounded, system-ui, sans-serif",
+      "letterSpacing": "normal"
+    },
+    ".intro-p": {
+      "x": 168,
+      "y": 369.828125,
+      "width": 576.09375,
+      "height": 140,
+      "font": "17px / 34px \"PingFang SC\", \"Hiragino Sans GB\", \"Noto Sans SC\", \"Noto Sans CJK SC\", \"Microsoft YaHei\", sans-serif",
+      "fontFamily": "\"PingFang SC\", \"Hiragino Sans GB\", \"Noto Sans SC\", \"Noto Sans CJK SC\", \"Microsoft YaHei\", sans-serif",
+      "letterSpacing": "normal"
+    },
+    ".stage-card": {
+      "x": 800.09375,
+      "y": 195.84375,
+      "width": 448.296875,
+      "height": 448.296875,
+      "font": "16px / 28px Fredoka, Nunito, \"Varela Round\", ui-rounded, system-ui, sans-serif, \"PingFang SC\", \"Hiragino Sans GB\", \"Noto Sans SC\", \"Noto Sans CJK SC\", \"Microsoft YaHei\", sans-serif",
+      "fontFamily": "Fredoka, Nunito, \"Varela Round\", ui-rounded, system-ui, sans-serif, \"PingFang SC\", \"Hiragino Sans GB\", \"Noto Sans SC\", \"Noto Sans CJK SC\", \"Microsoft YaHei\", sans-serif",
+      "letterSpacing": "normal"
+    },
+    ".hero-cat": {
+      "x": 860.5859375,
+      "y": 249.7899932861328,
+      "width": 327.296875,
+      "height": 327.296875,
+      "font": "16px / 28px Fredoka, Nunito, \"Varela Round\", ui-rounded, system-ui, sans-serif, \"PingFang SC\", \"Hiragino Sans GB\", \"Noto Sans SC\", \"Noto Sans CJK SC\", \"Microsoft YaHei\", sans-serif",
+      "fontFamily": "Fredoka, Nunito, \"Varela Round\", ui-rounded, system-ui, sans-serif, \"PingFang SC\", \"Hiragino Sans GB\", \"Noto Sans SC\", \"Noto Sans CJK SC\", \"Microsoft YaHei\", sans-serif",
+      "letterSpacing": "normal"
+    },
+    ".chip": {
+      "x": 168,
+      "y": 527.828125,
+      "width": 91.609375,
+      "height": 32,
+      "font": "700 12px / 12px \"PingFang SC\", \"Hiragino Sans GB\", \"Noto Sans SC\", \"Noto Sans CJK SC\", \"Microsoft YaHei\", sans-serif",
+      "fontFamily": "\"PingFang SC\", \"Hiragino Sans GB\", \"Noto Sans SC\", \"Noto Sans CJK SC\", \"Microsoft YaHei\", sans-serif",
+      "letterSpacing": "0.72px"
+    },
+    ".nav": {
+      "x": 1017.015625,
+      "y": 20,
+      "width": 382.984375,
+      "height": 40,
+      "font": "16px / 28px Fredoka, Nunito, \"Varela Round\", ui-rounded, system-ui, sans-serif, \"PingFang SC\", \"Hiragino Sans GB\", \"Noto Sans SC\", \"Noto Sans CJK SC\", \"Microsoft YaHei\", sans-serif",
+      "fontFamily": "Fredoka, Nunito, \"Varela Round\", ui-rounded, system-ui, sans-serif, \"PingFang SC\", \"Hiragino Sans GB\", \"Noto Sans SC\", \"Noto Sans CJK SC\", \"Microsoft YaHei\", sans-serif",
+      "letterSpacing": "normal"
+    },
+    ".logo": {
+      "x": 40,
+      "y": 16,
+      "width": 156.953125,
+      "height": 48,
+      "font": "16px / 28px Fredoka, Nunito, \"Varela Round\", ui-rounded, system-ui, sans-serif, \"PingFang SC\", \"Hiragino Sans GB\", \"Noto Sans SC\", \"Noto Sans CJK SC\", \"Microsoft YaHei\", sans-serif",
+      "fontFamily": "Fredoka, Nunito, \"Varela Round\", ui-rounded, system-ui, sans-serif, \"PingFang SC\", \"Hiragino Sans GB\", \"Noto Sans SC\", \"Noto Sans CJK SC\", \"Microsoft YaHei\", sans-serif",
+      "letterSpacing": "normal"
+    }
+  }
+}

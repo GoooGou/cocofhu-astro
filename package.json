@@ -1,0 +1,33 @@
+{
+  "name": "cocofhu-astro-replica",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "node scripts/astro.mjs dev --host 127.0.0.1",
+    "build": "node scripts/astro.mjs check && node scripts/astro.mjs build",
+    "preview": "node scripts/astro.mjs preview --host 127.0.0.1",
+    "test:browser": "node scripts/verify.mjs",
+    "test:blog": "node scripts/verify-blog.mjs",
+    "test:navigation": "node scripts/verify-navigation.mjs"
+  },
+  "dependencies": {
+    "@astrojs/markdoc": "^2.1.1",
+    "@astrojs/react": "^7.1.1",
+    "@astrojs/rss": "^4.0.19",
+    "@keystatic/astro": "^6.0.0",
+    "@keystatic/core": "^0.6.9",
+    "animal-island-ui": "^2.3.0",
+    "astro": "^7.4.2",
+    "classnames": "^2.5.1",
+    "react": "^19.3.1",
+    "react-dom": "^19.3.1"
+  },
+  "devDependencies": {
+    "@astrojs/check": "^0.9.12",
+    "@types/react": "^19.3.0",
+    "@types/react-dom": "^19.3.0",
+    "puppeteer-core": "^25.16.0",
+    "typescript": "^6.0.3"
+  }
+}

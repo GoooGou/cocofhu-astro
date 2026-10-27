@@ -1,0 +1,15 @@
+---
+import BlogLayout from '../../../layouts/BlogLayout.astro';
+import PortfolioGrid from '../../../components/PortfolioGrid.astro';
+import { publishedProjects } from '../../../lib/portfolio';
+import { entryTags, tagIndex } from '../../../lib/tags';
+export async function getStaticPaths() {
+  const allProjects = await publishedProjects();
+  return tagIndex(allProjects).map(({ tag }) => ({ params: { tag }, props: { tag, allProjects, projects: allProjects.filter(project => entryTags(project).includes(tag)) } }));
+}
+const { tag, projects, allProjects } = Astro.props;
+---
+<BlogLayout title={`${tag}作品`} description={`作品集中关于${tag}的项目。`} section="portfolio">
+  <section class="taxonomy-intro"><a href="/portfolio/">全部作品</a><h1>{tag}<span>相关作品</span></h1><p>从同一个角度，看看这些尝试。</p></section>
+  <PortfolioGrid projects={projects} allProjects={allProjects} activeTag={tag} />
+</BlogLayout>

@@ -1,0 +1,206 @@
+{
+  "date": "2026-10-27",
+  "results": [
+    {
+      "name": "One semantic h1",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "Real library controls rendered",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "Cat pointer changes one form",
+      "pass": true,
+      "detail": "yume"
+    },
+    {
+      "name": "Cat keyboard changes one form",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "Language changes to English",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "English card content",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "Annotation opens on click",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "Escape dismisses annotation",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "Calling card opens",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "Dialog focus moved to close",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "Dialog closes and restores focus",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "Scroll buddy appears",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "Back to top",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "Pause control",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "Live reduced-motion preference",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "No horizontal overflow 320",
+      "pass": true,
+      "detail": {
+        "viewport": 320,
+        "document": 320,
+        "body": 320
+      }
+    },
+    {
+      "name": "No horizontal overflow 375",
+      "pass": true,
+      "detail": {
+        "viewport": 375,
+        "document": 375,
+        "body": 375
+      }
+    },
+    {
+      "name": "No horizontal overflow 414",
+      "pass": true,
+      "detail": {
+        "viewport": 414,
+        "document": 414,
+        "body": 414
+      }
+    },
+    {
+      "name": "No horizontal overflow 560",
+      "pass": true,
+      "detail": {
+        "viewport": 560,
+        "document": 560,
+        "body": 560
+      }
+    },
+    {
+      "name": "No horizontal overflow 768",
+      "pass": true,
+      "detail": {
+        "viewport": 768,
+        "document": 768,
+        "body": 768
+      }
+    },
+    {
+      "name": "No horizontal overflow 900",
+      "pass": true,
+      "detail": {
+        "viewport": 900,
+        "document": 900,
+        "body": 900
+      }
+    },
+    {
+      "name": "No horizontal overflow 901",
+      "pass": true,
+      "detail": {
+        "viewport": 901,
+        "document": 901,
+        "body": 901
+      }
+    },
+    {
+      "name": "No horizontal overflow 1024",
+      "pass": true,
+      "detail": {
+        "viewport": 1024,
+        "document": 1024,
+        "body": 1024
+      }
+    },
+    {
+      "name": "No horizontal overflow 1280",
+      "pass": true,
+      "detail": {
+        "viewport": 1280,
+        "document": 1280,
+        "body": 1280
+      }
+    },
+    {
+      "name": "No horizontal overflow 1440",
+      "pass": true,
+      "detail": {
+        "viewport": 1440,
+        "document": 1440,
+        "body": 1440
+      }
+    },
+    {
+      "name": "No horizontal overflow 1920",
+      "pass": true,
+      "detail": {
+        "viewport": 1920,
+        "document": 1920,
+        "body": 1920
+      }
+    },
+    {
+      "name": "Hero fits 1280×800",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "No-JS intro is not blocking",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "No-JS cats rendered by Astro",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "No-JS content visible",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "No browser runtime errors",
+      "pass": true,
+      "detail": []
+    }
+  ],
+  "passed": 31,
+  "failed": 0
+}

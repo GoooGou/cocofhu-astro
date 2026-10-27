@@ -1,0 +1,520 @@
+{
+  "summary": {
+    "fails": 1,
+    "reflex": 4,
+    "warns": 1,
+    "waived": 38,
+    "rejected": 6,
+    "answered": 0,
+    "dismissed": 3,
+    "notes": 3,
+    "files": 4,
+    "render": "ran"
+  },
+  "findings": [
+    {
+      "gate": "34",
+      "grade": "FAIL",
+      "tier": "floor",
+      "file": "src\\layouts\\BlogLayout.astro",
+      "line": 1,
+      "evidence": "no overflow-x: clip on html and body",
+      "fix": "overflow-x: clip on both html and body"
+    },
+    {
+      "gate": "44c",
+      "grade": "REFLEX",
+      "tier": "reflex",
+      "file": "http://127.0.0.1:4321/blog/",
+      "line": 1,
+      "evidence": "[1440px] hero ends at 436px of a 900px screen",
+      "fix": "Fill the first screen with the visual or the headline, not with copy"
+    },
+    {
+      "gate": "44c",
+      "grade": "REFLEX",
+      "tier": "reflex",
+      "file": "http://127.0.0.1:4321/blog/",
+      "line": 1,
+      "evidence": "[1440px] hero visual sits 552px from the text and 174px from the viewport edge",
+      "fix": "Bring the visual to within 48 to 120px of the text; never pin it to the corner"
+    },
+    {
+      "gate": "44c",
+      "grade": "REFLEX",
+      "tier": "reflex",
+      "file": "http://127.0.0.1:4321/blog/hello-island/",
+      "line": 1,
+      "evidence": "[1440px] hero ends at 487px of a 900px screen",
+      "fix": "Fill the first screen with the visual or the headline, not with copy"
+    },
+    {
+      "gate": "59",
+      "grade": "REFLEX",
+      "tier": "reflex",
+      "file": "http://127.0.0.1:4321/blog/",
+      "line": 1,
+      "evidence": "[1440px] smallest gap between sections is 105px (gaps: 105, 154)",
+      "fix": "120px or more between sections, by the --section-gap steps"
+    },
+    {
+      "gate": "44c",
+      "grade": "WAIVER",
+      "tier": "reflex",
+      "file": "src\\layouts\\BlogLayout.astro",
+      "line": 1,
+      "evidence": "waiver on 44c REJECTED (reason shares no word with the page)",
+      "fix": "Fix the gate, or satisfy the guard and say why in the page's own words"
+    },
+    {
+      "gate": "44c",
+      "grade": "WAIVER",
+      "tier": "reflex",
+      "file": "src\\pages\\blog\\index.astro",
+      "line": 1,
+      "evidence": "waiver on 44c REJECTED (reason shares no word with the page)",
+      "fix": "Fix the gate, or satisfy the guard and say why in the page's own words"
+    },
+    {
+      "gate": "44c",
+      "grade": "WAIVER",
+      "tier": "reflex",
+      "file": "src\\styles\\blog.css",
+      "line": 1,
+      "evidence": "waiver on 44c REJECTED (reason shares no word with the page)",
+      "fix": "Fix the gate, or satisfy the guard and say why in the page's own words"
+    },
+    {
+      "gate": "59",
+      "grade": "WAIVER",
+      "tier": "reflex",
+      "file": "src\\layouts\\BlogLayout.astro",
+      "line": 1,
+      "evidence": "waiver on 59 REJECTED (reason shares no word with the page)",
+      "fix": "Fix the gate, or satisfy the guard and say why in the page's own words"
+    },
+    {
+      "gate": "59",
+      "grade": "WAIVER",
+      "tier": "reflex",
+      "file": "src\\pages\\blog\\index.astro",
+      "line": 1,
+      "evidence": "waiver on 59 REJECTED (reason shares no word with the page)",
+      "fix": "Fix the gate, or satisfy the guard and say why in the page's own words"
+    },
+    {
+      "gate": "59",
+      "grade": "WAIVER",
+      "tier": "reflex",
+      "file": "src\\styles\\blog.css",
+      "line": 1,
+      "evidence": "waiver on 59 REJECTED (reason shares no word with the page)",
+      "fix": "Fix the gate, or satisfy the guard and say why in the page's own words"
+    },
+    {
+      "gate": "F6",
+      "grade": "WARN",
+      "tier": "finish",
+      "file": "src\\styles\\blog.css",
+      "line": 58,
+      "evidence": "numeric selector .post-entry-first .post-number at display size without tabular figures",
+      "fix": "Add font-variant-numeric: tabular-nums"
+    },
+    {
+      "gate": "24b",
+      "grade": "WAIVED",
+      "tier": "reflex",
+      "file": "src\\styles\\blog.css",
+      "line": 22,
+      "evidence": "padding-block: 10px (off the 4px scale) on .blog-header nav a",
+      "fix": "Use the 4px spacing scale"
+    },
+    {
+      "gate": "24b",
+      "grade": "WAIVED",
+      "tier": "reflex",
+      "file": "src\\styles\\blog.css",
+      "line": 25,
+      "evidence": "margin: 0 0 22px (off the 4px scale) on .blog-intro h1",
+      "fix": "Use the 4px spacing scale"
+    },
+    {
+      "gate": "24b",
+      "grade": "WAIVED",
+      "tier": "reflex",
+      "file": "src\\styles\\blog.css",
+      "line": 26,
+      "evidence": "padding-inline: 10px (off the 4px scale) on .blog-intro h1 span",
+      "fix": "Use the 4px spacing scale"
+    },
+    {
+      "gate": "24b",
+      "grade": "WAIVED",
+      "tier": "reflex",
+      "file": "src\\styles\\blog.css",
+      "line": 30,
+      "evidence": "padding: 22px 32px (off the 4px scale) on .doodle-note",
+      "fix": "Use the 4px spacing scale"
+    },
+    {
+      "gate": "24b",
+      "grade": "WAIVED",
+      "tier": "reflex",
+      "file": "src\\styles\\blog.css",
+      "line": 31,
+      "evidence": "gap: 18px (off the 4px scale) on .archive-head",
+      "fix": "Use the 4px spacing scale"
+    },
+    {
+      "gate": "24b",
+      "grade": "WAIVED",
+      "tier": "reflex",
+      "file": "src\\styles\\blog.css",
+      "line": 37,
+      "evidence": "padding: 7px 18px (off the 4px scale) on .filter-button.replica-control",
+      "fix": "Use the 4px spacing scale"
+    },
+    {
+      "gate": "24b",
+      "grade": "WAIVED",
+      "tier": "reflex",
+      "file": "src\\styles\\blog.css",
+      "line": 42,
+      "evidence": "gap: 10px (off the 4px scale) on .blog-search",
+      "fix": "Use the 4px spacing scale"
+    },
+    {
+      "gate": "24b",
+      "grade": "WAIVED",
+      "tier": "reflex",
+      "file": "src\\styles\\blog.css",
+      "line": 47,
+      "evidence": "padding: 38px 0 (off the 4px scale) on .post-entry",
+      "fix": "Use the 4px spacing scale"
+    },
+    {
+      "gate": "24b",
+      "grade": "WAIVED",
+      "tier": "reflex",
+      "file": "src\\styles\\blog.css",
+      "line": 48,
+      "evidence": "margin: 10px 0 18px (off the 4px scale) on .post-entry-first",
+      "fix": "Use the 4px spacing scale"
+    },
+    {
+      "gate": "24b",
+      "grade": "WAIVED",
+      "tier": "reflex",
+      "file": "src\\styles\\blog.css",
+      "line": 49,
+      "evidence": "gap: 10px (off the 4px scale) on .post-date",
+      "fix": "Use the 4px spacing scale"
+    },
+    {
+      "gate": "24b",
+      "grade": "WAIVED",
+      "tier": "reflex",
+      "file": "src\\styles\\blog.css",
+      "line": 49,
+      "evidence": "padding-top: 6px (off the 4px scale) on .post-date",
+      "fix": "Use the 4px spacing scale"
+    },
+    {
+      "gate": "24b",
+      "grade": "WAIVED",
+      "tier": "reflex",
+      "file": "src\\styles\\blog.css",
+      "line": 50,
+      "evidence": "padding: 1px 10px (off the 4px scale) on .post-date span",
+      "fix": "Use the 4px spacing scale"
+    },
+    {
+      "gate": "24b",
+      "grade": "WAIVED",
+      "tier": "reflex",
+      "file": "src\\styles\\blog.css",
+      "line": 55,
+      "evidence": "margin: 18px 0 0 (off the 4px scale) on .post-tags",
+      "fix": "Use the 4px spacing scale"
+    },
+    {
+      "gate": "24b",
+      "grade": "WAIVED",
+      "tier": "reflex",
+      "file": "src\\styles\\blog.css",
+      "line": 56,
+      "evidence": "margin-right: 3px (off the 4px scale) on .post-tags li::before",
+      "fix": "Use the 4px spacing scale"
+    },
+    {
+      "gate": "24b",
+      "grade": "WAIVED",
+      "tier": "reflex",
+      "file": "src\\styles\\blog.css",
+      "line": 62,
+      "evidence": "gap: 18px (off the 4px scale) on .blog-footer",
+      "fix": "Use the 4px spacing scale"
+    },
+    {
+      "gate": "24b",
+      "grade": "WAIVED",
+      "tier": "reflex",
+      "file": "src\\styles\\blog.css",
+      "line": 66,
+      "evidence": "padding: 3px 16px (off the 4px scale) on .article-top span",
+      "fix": "Use the 4px spacing scale"
+    },
+    {
+      "gate": "24b",
+      "grade": "WAIVED",
+      "tier": "reflex",
+      "file": "src\\styles\\blog.css",
+      "line": 67,
+      "evidence": "padding: 58px 68px 40px (off the 4px scale) on .article-sheet",
+      "fix": "Use the 4px spacing scale"
+    },
+    {
+      "gate": "24b",
+      "grade": "WAIVED",
+      "tier": "reflex",
+      "file": "src\\styles\\blog.css",
+      "line": 68,
+      "evidence": "margin-bottom: 38px (off the 4px scale) on .article-heading",
+      "fix": "Use the 4px spacing scale"
+    },
+    {
+      "gate": "24b",
+      "grade": "WAIVED",
+      "tier": "reflex",
+      "file": "src\\styles\\blog.css",
+      "line": 77,
+      "evidence": "margin: 30px 0 14px (off the 4px scale) on .article-prose h3",
+      "fix": "Use the 4px spacing scale"
+    },
+    {
+      "gate": "24b",
+      "grade": "WAIVED",
+      "tier": "reflex",
+      "file": "src\\styles\\blog.css",
+      "line": 81,
+      "evidence": "padding-left: 26px (off the 4px scale) on .article-prose ul, .article-prose ol",
+      "fix": "Use the 4px spacing scale"
+    },
+    {
+      "gate": "24b",
+      "grade": "WAIVED",
+      "tier": "reflex",
+      "file": "src\\styles\\blog.css",
+      "line": 81,
+      "evidence": "margin-block: 22px (off the 4px scale) on .article-prose ul, .article-prose ol",
+      "fix": "Use the 4px spacing scale"
+    },
+    {
+      "gate": "24b",
+      "grade": "WAIVED",
+      "tier": "reflex",
+      "file": "src\\styles\\blog.css",
+      "line": 86,
+      "evidence": "padding: 2px 6px (off the 4px scale) on .article-prose :not(pre) > code",
+      "fix": "Use the 4px spacing scale"
+    },
+    {
+      "gate": "24b",
+      "grade": "WAIVED",
+      "tier": "reflex",
+      "file": "src\\styles\\blog.css",
+      "line": 89,
+      "evidence": "padding: 10px 16px (off the 4px scale) on .article-prose td, .article-prose th",
+      "fix": "Use the 4px spacing scale"
+    },
+    {
+      "gate": "24b",
+      "grade": "WAIVED",
+      "tier": "reflex",
+      "file": "src\\styles\\blog.css",
+      "line": 93,
+      "evidence": "margin: 0 0 14px (off the 4px scale) on .article-end p",
+      "fix": "Use the 4px spacing scale"
+    },
+    {
+      "gate": "24b",
+      "grade": "WAIVED",
+      "tier": "reflex",
+      "file": "src\\styles\\blog.css",
+      "line": 106,
+      "evidence": "padding: 42px 36px 32px (off the 4px scale) on .article-sheet",
+      "fix": "Use the 4px spacing scale"
+    },
+    {
+      "gate": "24b",
+      "grade": "WAIVED",
+      "tier": "reflex",
+      "file": "src\\styles\\blog.css",
+      "line": 112,
+      "evidence": "gap: 6px (off the 4px scale) on .blog-brand",
+      "fix": "Use the 4px spacing scale"
+    },
+    {
+      "gate": "24b",
+      "grade": "WAIVED",
+      "tier": "reflex",
+      "file": "src\\styles\\blog.css",
+      "line": 114,
+      "evidence": "gap: 14px (off the 4px scale) on .blog-header nav",
+      "fix": "Use the 4px spacing scale"
+    },
+    {
+      "gate": "24b",
+      "grade": "WAIVED",
+      "tier": "reflex",
+      "file": "src\\styles\\blog.css",
+      "line": 120,
+      "evidence": "gap: 18px (off the 4px scale) on .blog-tools",
+      "fix": "Use the 4px spacing scale"
+    },
+    {
+      "gate": "24b",
+      "grade": "WAIVED",
+      "tier": "reflex",
+      "file": "src\\styles\\blog.css",
+      "line": 122,
+      "evidence": "padding-inline: 15px (off the 4px scale) on .filter-button.replica-control",
+      "fix": "Use the 4px spacing scale"
+    },
+    {
+      "gate": "24b",
+      "grade": "WAIVED",
+      "tier": "reflex",
+      "file": "src\\styles\\blog.css",
+      "line": 123,
+      "evidence": "gap: 14px (off the 4px scale) on .post-entry",
+      "fix": "Use the 4px spacing scale"
+    },
+    {
+      "gate": "24b",
+      "grade": "WAIVED",
+      "tier": "reflex",
+      "file": "src\\styles\\blog.css",
+      "line": 124,
+      "evidence": "padding: 25px 22px (off the 4px scale) on .post-entry-first",
+      "fix": "Use the 4px spacing scale"
+    },
+    {
+      "gate": "24b",
+      "grade": "WAIVED",
+      "tier": "reflex",
+      "file": "src\\styles\\blog.css",
+      "line": 132,
+      "evidence": "padding: 30px 20px 28px (off the 4px scale) on .article-sheet",
+      "fix": "Use the 4px spacing scale"
+    },
+    {
+      "gate": "24b",
+      "grade": "WAIVED",
+      "tier": "reflex",
+      "file": "src\\styles\\blog.css",
+      "line": 133,
+      "evidence": "padding-bottom: 25px (off the 4px scale) on .article-heading",
+      "fix": "Use the 4px spacing scale"
+    },
+    {
+      "gate": "24b",
+      "grade": "WAIVED",
+      "tier": "reflex",
+      "file": "src\\styles\\blog.css",
+      "line": 138,
+      "evidence": "padding: 14px (off the 4px scale) on .article-prose pre",
+      "fix": "Use the 4px spacing scale"
+    },
+    {
+      "gate": "38iii",
+      "grade": "WAIVED",
+      "tier": "reflex",
+      "file": "src\\styles\\blog.css",
+      "line": 26,
+      "evidence": "accented word inside a heading (.blog-intro h1 span)",
+      "fix": "Set the whole head one way: a line break, a second line at a second size, or the whole head in the accent. Guard: the theme names the coloured word as its signature and it appears once on the page, in the hero"
+    },
+    {
+      "gate": "49b",
+      "grade": "WAIVED",
+      "tier": "reflex",
+      "file": "http://127.0.0.1:4321/blog/hello-island/",
+      "line": 1,
+      "evidence": "[320px] link \"复刻里，那些容易漏掉的小事\" wraps to 2 lines (a)",
+      "fix": "Shorten the label or set nowrap"
+    },
+    {
+      "gate": "78",
+      "grade": "WAIVED",
+      "tier": "reflex",
+      "file": "http://127.0.0.1:4321/blog/",
+      "line": 1,
+      "evidence": "[1440px] section heads render at 27px under a 72px hero head",
+      "fix": "h2 at --text-section (about 52px at 1440), item titles at --text-title (layout.md § 2)"
+    },
+    {
+      "gate": "79",
+      "grade": "WAIVED",
+      "tier": "reflex",
+      "file": "http://127.0.0.1:4321/blog/hello-island/",
+      "line": 1,
+      "evidence": "[1440px] 447px of nothing between the hero's last content (y 453) and the fold",
+      "fix": "Centre the content in the screen and grow the visual or the head (layout.md § 6); never fill it with copy"
+    },
+    {
+      "gate": "3",
+      "grade": "DISMISSED",
+      "tier": "reflex",
+      "file": "src\\styles\\blog.css",
+      "line": 83,
+      "evidence": "side stripe border-left: 4px solid var(--purple) on .article-prose blockquote",
+      "fix": "Hairline all round, none, or an accent square"
+    },
+    {
+      "gate": "77",
+      "grade": "DISMISSED",
+      "tier": "reflex",
+      "file": "http://127.0.0.1:4321/blog/",
+      "line": 1,
+      "evidence": "[1440px] 3 sections, hero and footer included",
+      "fix": "A landing strip, not a page: six to nine sections, five on a thin prompt (layout.md § 3)"
+    },
+    {
+      "gate": "77",
+      "grade": "DISMISSED",
+      "tier": "reflex",
+      "file": "http://127.0.0.1:4321/blog/hello-island/",
+      "line": 1,
+      "evidence": "[1440px] 2 sections, hero and footer included",
+      "fix": "A landing strip, not a page: six to nine sections, five on a thin prompt (layout.md § 3)"
+    },
+    {
+      "gate": "waive",
+      "grade": "NOTE",
+      "tier": "ledger",
+      "file": "src\\layouts\\BlogLayout.astro",
+      "line": 1,
+      "evidence": "5 reflex gates waived (24b, 38iii, 49b, 78, 79): that is a house style,…",
+      "fix": "Lock it into a design.md so later pages inherit it instead of re-arguing it"
+    },
+    {
+      "gate": "waive",
+      "grade": "NOTE",
+      "tier": "ledger",
+      "file": "src\\pages\\blog\\index.astro",
+      "line": 1,
+      "evidence": "5 reflex gates waived (24b, 38iii, 49b, 78, 79): that is a house style,…",
+      "fix": "Lock it into a design.md so later pages inherit it instead of re-arguing it"
+    },
+    {
+      "gate": "waive",
+      "grade": "NOTE",
+      "tier": "ledger",
+      "file": "src\\styles\\blog.css",
+      "line": 1,
+      "evidence": "5 reflex gates waived (24b, 38iii, 49b, 78, 79): that is a house style,…",
+      "fix": "Lock it into a design.md so later pages inherit it instead of re-arguing it"
+    }
+  ]
+}

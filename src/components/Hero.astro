@@ -1,0 +1,35 @@
+---
+import { catSVG } from '../scripts/cats.js';
+import IslandButton from './IslandButton.astro';
+import IslandTag from './IslandTag.astro';
+import initial from '../data/initial.json';
+---
+<section class="hero" id="hero">
+      <div class="hero-copy">
+        <p class="kicker pop" style="--d:0ms" data-i18n="kicker"><span class="spark">✦</span> HELLO · 闪耀扣扣的主页</p>
+        <h1 class="title" aria-label="cocofhu">
+          <span class="tbox" style="--i:0;--c:var(--pink)">c</span><span class="tbox" style="--i:1;--c:var(--lav)">o</span><span class="tbox" style="--i:2;--c:var(--mint)">c</span><span class="tbox" style="--i:3;--c:var(--yellow)">o</span><span class="tbox" style="--i:4;--c:var(--blue)">f</span><span class="tbox" style="--i:5;--c:var(--pink)">h</span><span class="tbox" style="--i:6;--c:var(--lav)">u</span>
+        </h1>
+        <p class="intro-p pop" style="--d:420ms" data-i18n="intro" set:html={initial.intro} />
+        <div class="chips pop" style="--d:560ms">
+          <IslandTag i18n="tag1" label="分布式系统" /><IslandTag i18n="tag2" label="存储" /><IslandTag i18n="tag3" label="基础设施" />
+        </div>
+        <div class="ctas pop" style="--d:680ms">
+          <a class="pill pill--ink pill--lg" href="https://github.com/cocofhu" target="_blank" rel="noopener">github.com/cocofhu <svg class="ext" viewBox="0 0 16 16" aria-hidden="true"><path d="M6 3h7v7M13 3L4 12"/></svg></a>
+        </div>
+      </div>
+
+      <div class="hero-stage pop" style="--d:120ms">
+        <div class="stage-card">
+          <span class="live"><span class="live-dot"></span><b>LIVE</b></span>
+          <span class="est">EST. 2026</span>
+          <span class="st st1"></span><span class="st st2"></span><span class="st st3"></span><span class="st st4"></span>
+          <IslandButton  className="hero-cat" id="heroCat" aria-label="戳一下小幽灵猫" data-i18n-attr="aria-label:catAria">
+            <span class="say" id="heroSay">你好呀~</span>
+            <span data-cat="yume" data-big><Fragment set:html={catSVG('yume', false)} /></span>
+          </IslandButton>
+          <span class="hero-shadow"></span>
+          <p class="stage-hint" data-i18n="hint">点我 · 戳戳看</p>
+        </div>
+      </div>
+    </section>

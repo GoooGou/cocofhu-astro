@@ -1,0 +1,290 @@
+{
+  "results": [
+    {
+      "name": "Home Blog and portfolio navigation visible 320",
+      "pass": true
+    },
+    {
+      "name": "Home header fits 320",
+      "pass": true
+    },
+    {
+      "name": "Home Blog and portfolio navigation visible 375",
+      "pass": true
+    },
+    {
+      "name": "Home header fits 375",
+      "pass": true
+    },
+    {
+      "name": "Home Blog and portfolio navigation visible 768",
+      "pass": true
+    },
+    {
+      "name": "Home header fits 768",
+      "pass": true
+    },
+    {
+      "name": "Home Blog and portfolio navigation visible 1440",
+      "pass": true
+    },
+    {
+      "name": "Home header fits 1440",
+      "pass": true
+    },
+    {
+      "name": "Home Blog and portfolio navigation visible 1920",
+      "pass": true
+    },
+    {
+      "name": "Home header fits 1920",
+      "pass": true
+    },
+    {
+      "name": "/blog/ responds with content",
+      "pass": true
+    },
+    {
+      "name": "/blog/ navigation links",
+      "pass": true
+    },
+    {
+      "name": "/blog/ has clickable tags",
+      "pass": true
+    },
+    {
+      "name": "Tag route /blog/tags/%E9%9A%8F%E8%AE%B0/",
+      "pass": true
+    },
+    {
+      "name": "Tag route /blog/tags/%E7%A4%BA%E4%BE%8B%E6%96%87%E7%AB%A0/",
+      "pass": true
+    },
+    {
+      "name": "Tag route /blog/tags/%E7%AB%99%E7%82%B9%E7%AC%94%E8%AE%B0/",
+      "pass": true
+    },
+    {
+      "name": "Tag route /blog/tags/%E8%AE%BE%E8%AE%A1/",
+      "pass": true
+    },
+    {
+      "name": "Tag route /blog/tags/%E8%AE%BE%E8%AE%A1%E7%BB%86%E8%8A%82/",
+      "pass": true
+    },
+    {
+      "name": "Tag route /blog/tags/%E5%BC%80%E5%8F%91/",
+      "pass": true
+    },
+    {
+      "name": "Tag route /blog/tags/Astro/",
+      "pass": true
+    },
+    {
+      "name": "Tag route /blog/tags/Keystatic/",
+      "pass": true
+    },
+    {
+      "name": "No overflow /blog/ 320",
+      "pass": true
+    },
+    {
+      "name": "No overflow /blog/ 375",
+      "pass": true
+    },
+    {
+      "name": "No overflow /blog/ 768",
+      "pass": true
+    },
+    {
+      "name": "No overflow /blog/ 1440",
+      "pass": true
+    },
+    {
+      "name": "No overflow /blog/ 1920",
+      "pass": true
+    },
+    {
+      "name": "/portfolio/ responds with content",
+      "pass": true
+    },
+    {
+      "name": "/portfolio/ navigation links",
+      "pass": true
+    },
+    {
+      "name": "/portfolio/ has clickable tags",
+      "pass": true
+    },
+    {
+      "name": "Tag route /portfolio/tags/%E8%AE%BE%E8%AE%A1/",
+      "pass": true
+    },
+    {
+      "name": "Tag route /portfolio/tags/Astro/",
+      "pass": true
+    },
+    {
+      "name": "Tag route /portfolio/tags/%E4%BA%A4%E4%BA%92%E8%AE%BE%E8%AE%A1/",
+      "pass": true
+    },
+    {
+      "name": "Tag route /portfolio/tags/%E8%A7%86%E8%A7%89%E5%A4%8D%E5%88%BB/",
+      "pass": true
+    },
+    {
+      "name": "Tag route /portfolio/tags/%E5%BC%80%E5%8F%91/",
+      "pass": true
+    },
+    {
+      "name": "Tag route /portfolio/tags/Keystatic/",
+      "pass": true
+    },
+    {
+      "name": "Tag route /portfolio/tags/%E5%86%85%E5%AE%B9%E7%AE%A1%E7%90%86/",
+      "pass": true
+    },
+    {
+      "name": "No overflow /portfolio/ 320",
+      "pass": true
+    },
+    {
+      "name": "No overflow /portfolio/ 375",
+      "pass": true
+    },
+    {
+      "name": "No overflow /portfolio/ 768",
+      "pass": true
+    },
+    {
+      "name": "No overflow /portfolio/ 1440",
+      "pass": true
+    },
+    {
+      "name": "No overflow /portfolio/ 1920",
+      "pass": true
+    },
+    {
+      "name": "Portfolio screenshots load",
+      "pass": true
+    },
+    {
+      "name": "/portfolio/cocofhu-replica/ responds with content",
+      "pass": true
+    },
+    {
+      "name": "/portfolio/cocofhu-replica/ navigation links",
+      "pass": true
+    },
+    {
+      "name": "/portfolio/cocofhu-replica/ has clickable tags",
+      "pass": true
+    },
+    {
+      "name": "Tag route /portfolio/tags/%E8%AE%BE%E8%AE%A1/",
+      "pass": true
+    },
+    {
+      "name": "Tag route /portfolio/tags/Astro/",
+      "pass": true
+    },
+    {
+      "name": "Tag route /portfolio/tags/%E4%BA%A4%E4%BA%92%E8%AE%BE%E8%AE%A1/",
+      "pass": true
+    },
+    {
+      "name": "Tag route /portfolio/tags/%E8%A7%86%E8%A7%89%E5%A4%8D%E5%88%BB/",
+      "pass": true
+    },
+    {
+      "name": "No overflow /portfolio/cocofhu-replica/ 320",
+      "pass": true
+    },
+    {
+      "name": "No overflow /portfolio/cocofhu-replica/ 375",
+      "pass": true
+    },
+    {
+      "name": "No overflow /portfolio/cocofhu-replica/ 768",
+      "pass": true
+    },
+    {
+      "name": "No overflow /portfolio/cocofhu-replica/ 1440",
+      "pass": true
+    },
+    {
+      "name": "No overflow /portfolio/cocofhu-replica/ 1920",
+      "pass": true
+    },
+    {
+      "name": "/portfolio/island-journal/ responds with content",
+      "pass": true
+    },
+    {
+      "name": "/portfolio/island-journal/ navigation links",
+      "pass": true
+    },
+    {
+      "name": "/portfolio/island-journal/ has clickable tags",
+      "pass": true
+    },
+    {
+      "name": "Tag route /portfolio/tags/%E5%BC%80%E5%8F%91/",
+      "pass": true
+    },
+    {
+      "name": "Tag route /portfolio/tags/Astro/",
+      "pass": true
+    },
+    {
+      "name": "Tag route /portfolio/tags/Keystatic/",
+      "pass": true
+    },
+    {
+      "name": "Tag route /portfolio/tags/%E5%86%85%E5%AE%B9%E7%AE%A1%E7%90%86/",
+      "pass": true
+    },
+    {
+      "name": "No overflow /portfolio/island-journal/ 320",
+      "pass": true
+    },
+    {
+      "name": "No overflow /portfolio/island-journal/ 375",
+      "pass": true
+    },
+    {
+      "name": "No overflow /portfolio/island-journal/ 768",
+      "pass": true
+    },
+    {
+      "name": "No overflow /portfolio/island-journal/ 1440",
+      "pass": true
+    },
+    {
+      "name": "No overflow /portfolio/island-journal/ 1920",
+      "pass": true
+    },
+    {
+      "name": "Blog category excludes other categories",
+      "pass": true
+    },
+    {
+      "name": "Active category indicated",
+      "pass": true
+    },
+    {
+      "name": "Portfolio tag contains matching work only",
+      "pass": true
+    },
+    {
+      "name": "Tags work without JavaScript",
+      "pass": true
+    },
+    {
+      "name": "No public runtime errors",
+      "pass": true
+    }
+  ],
+  "passed": 71,
+  "failed": 0
+}

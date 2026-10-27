@@ -1,0 +1,20 @@
+---
+import type { CollectionEntry } from 'astro:content';
+import { entryTags, tagHref, tagIndex } from '../lib/tags';
+import TagNav from './TagNav.astro';
+interface Props { projects: CollectionEntry<'projects'>[]; allProjects: CollectionEntry<'projects'>[]; activeTag?: string; }
+const { projects, allProjects, activeTag } = Astro.props;
+---
+<section aria-labelledby="work-title">
+  <div class="archive-head"><h2 id="work-title">{activeTag ? `${activeTag}作品` : '已完成的作品'}</h2><p>{projects.length} 件作品</p></div>
+  <TagNav section="portfolio" tags={tagIndex(allProjects)} active={activeTag} />
+  <ol class="work-list">
+    {projects.map((project, index) => <li class="work-item" data-work>
+      <a class="work-image" href={`/portfolio/${project.id}/`} aria-label={`查看${project.data.title}`}>
+        {project.data.cover ? <img src={project.data.cover} alt={project.data.coverAlt} width="1440" height="900" loading={index ? 'lazy' : 'eager'} /> : <span class="work-placeholder">{project.data.title}</span>}
+      </a>
+      <div class="work-copy"><span class="work-index" aria-hidden="true">{String(index + 1).padStart(2, '0')}</span><h3><a href={`/portfolio/${project.id}/`}>{project.data.title}</a></h3><p>{project.data.excerpt}</p><ul class="post-tags" aria-label="作品标签">{entryTags(project).map(tag => <li><a href={tagHref('portfolio', tag)}>{tag}</a></li>)}</ul><a class="work-details" href={`/portfolio/${project.id}/`}>查看作品详情</a></div>
+    </li>)}
+  </ol>
+  {!projects.length && <p class="blog-empty">作品还在准备中，过阵子再来看看。</p>}
+</section>
